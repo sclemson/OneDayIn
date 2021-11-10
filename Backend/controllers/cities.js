@@ -38,3 +38,25 @@ export const addARecommendation = async (req, res) => {
       return res.status(404).json({ message: 'Something went wrong' })
     }
   }
+
+// ADDING A RATING
+export const addARating = async (req, res) => {
+  try {
+    const { id, recommendationId } = req.params
+    console.log(recommendationId)
+    const city = await City.findById(id)
+    if (!city) throw new Error()
+    console.log('City found')
+    const recommendation = city.recommendations.id(recommendationId)
+    console.log(recommendation)
+    if (!recommendation) throw new Error()
+    console.log('Recommendation Found')
+    const rating = req.body
+    recommendation.ratings.push(rating)
+    await city.save({ validateModifiedOnly: true })
+    return res.status(200).json(city)
+  } catch (err) {
+    console.log(err)
+    return res.status(404).json({ message: 'Something went wrong' })
+  }
+}

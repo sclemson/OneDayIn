@@ -1,6 +1,12 @@
 import mongoose from 'mongoose'
 import uniqueValidator from 'mongoose-unique-validator'
 
+const ratingsSchema = new mongoose.Schema(
+  {
+    rating: { type: Number, required: true, min: 1, max: 5 }
+  }
+)
+
 // Recommendation schema
 const recommendationSchema = new mongoose.Schema(
   {
@@ -12,11 +18,24 @@ const recommendationSchema = new mongoose.Schema(
     valueRating: { type: Number, required: true, min: 1, max: 5 },
     qualityRating: { type: Number, required: true, min: 1, max: 5 },
     owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+    ratings: [ ratingsSchema ]
   },
   {
     timestamps: true,
   }
 )
+
+recommendationSchema.virtual('averageRating').get(function () {
+  if (!this.ratings.length) return 'Not rated yet'
+  const sumOfRatings = this.ratings.reduce((acc, rating) => {
+    if (!rating.rating) return acc
+    return acc + rating.rating
+  }, 0)
+  console.log('SUM OF RATINGS', sumOfRatings)
+  return (sumOfRatings / this.ratings.length).toFixed(1)
+})
+
+recommendationSchema.set('toJSON', { virtuals: true })
 
 // Hotspot schema
 const hotspotSchema = new mongoose.Schema({

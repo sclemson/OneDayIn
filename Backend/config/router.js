@@ -3,6 +3,7 @@ import {
   getAllCities,
   getSingleCity,
   addARecommendation,
+  addARating
 } from '../controllers/cities.js'
 import { registerUser, loginUser } from '../controllers/auth.js'
 import { secureRoute } from './secureRoute.js'
@@ -25,5 +26,7 @@ router.route('/register').post(registerUser)
 router.route('/login').post(loginUser)
 
 router.route('/cities/:id/recommendations').post(secureRoute, addARecommendation)
+
+router.route('/cities/:id/recommendations/:recommendationId').post(secureRoute, addARating)
 
 export default router
