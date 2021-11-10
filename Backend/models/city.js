@@ -3,7 +3,8 @@ import uniqueValidator from 'mongoose-unique-validator'
 
 const ratingsSchema = new mongoose.Schema(
   {
-    rating: { type: Number, required: true, min: 1, max: 5 }
+    rating: { type: Number, required: true, min: 1, max: 5 },
+    owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
   }
 )
 

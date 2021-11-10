@@ -51,7 +51,8 @@ export const addARating = async (req, res) => {
     console.log(recommendation)
     if (!recommendation) throw new Error()
     console.log('Recommendation Found')
-    const rating = req.body
+    console.log(req.currentUser)
+    const rating = { ...req.body, owner: req.currentUser._id }
     recommendation.ratings.push(rating)
     await city.save({ validateModifiedOnly: true })
     return res.status(200).json(city)

@@ -13,6 +13,7 @@ export const secureRoute = async (req, res, next) => {
         const payload = jwt.verify(token, secret)
         // Use token to query the user model by using the sub section of the decoded token
         const userToVerify = await user.findById(payload.sub)
+        if(!userToVerify) throw new Error('User not found')
         console.log(userToVerify)
         req.currentUser = userToVerify
         next()
