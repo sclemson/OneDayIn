@@ -41,13 +41,15 @@ recommendationSchema.set('toJSON', { virtuals: true })
 // Hotspot schema
 const hotspotSchema = new mongoose.Schema({
     name: {type: String, required: true},
-    location: {type: String, required: true}
+    location: {type: String, required: true},
+    description: { type: String, maxlength: 200 } 
   })
 
 // City schema
 const citySchema = new mongoose.Schema({
   name: { type: String, required: true },
   country: { type: String, required: true },
+  continent: { type: String, required: true },
   overview: { type: String, required: true, maxlength: 300 },
   primarylanguage: { type: String, required: true },
   eat: [hotspotSchema],
