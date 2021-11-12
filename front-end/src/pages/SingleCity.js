@@ -29,14 +29,14 @@ const SingleCity = () => {
 
   return (
     <section>
-      {city ? (
+      {city ? 
         <CityInformation {...city} isHorizontal={true} />
-      ) : (
+        :  
         <div>
           <h4>Loading...</h4>
         </div>
-      )}
-    </section>
+      }
+    </section>  
   )
 }
 
