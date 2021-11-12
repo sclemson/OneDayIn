@@ -5,7 +5,7 @@ import bcrypt from 'bcrypt'
 const userSchema = new mongoose.Schema({
   username: { type: String, unique: true, required: true, maxlength: 30 },
   email: { type: String, unique: true, required: true },
-  password: { type: String, required: true },
+  password: { type: String, required: true }
   // number of contributions //
 })
 
@@ -22,7 +22,7 @@ userSchema.set('toJSON', {
   transform(_doc, json) {
     delete json.password // delete password key from JSON object
     return json // return the rest of the object
-  },
+  }
 })
 
 // VIRTUAL FIELD

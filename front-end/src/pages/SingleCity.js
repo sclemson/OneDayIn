@@ -1,10 +1,11 @@
+
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import CityInformation from '../components/CityInformation'
 import { getCity } from '../helpers/api'
 
 const SingleCity = () => {
-  const [city, setCity] = useState([])
+  const [city, setCity] = useState(null)
   const { id } = useParams()
   //   const history = useHistory()
 
@@ -28,11 +29,13 @@ const SingleCity = () => {
 
   return (
     <section>
-      {/* <p>
-        <Link to={`/cities/${id}/edit`}>Edit this city!</Link>
-        <button onClick={handleDeleteClick}>Delete this city!</button>
-      </p> */}
-      <CityInformation {...city} isHorizontal={true} />
+      {city ? (
+        <CityInformation {...city} isHorizontal={true} />
+      ) : (
+        <div>
+          <h4>Loading...</h4>
+        </div>
+      )}
     </section>
   )
 }

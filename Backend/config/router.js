@@ -7,7 +7,7 @@ import {
 } from '../controllers/cities.js'
 import { registerUser, loginUser } from '../controllers/auth.js'
 import { secureRoute } from './secureRoute.js'
-import { getUserProfile } from '../controllers/users.js'
+import { getAllusers, getUserProfile } from '../controllers/users.js'
 
 const router = express.Router()
 
@@ -15,11 +15,14 @@ router
   .route('/cities')
   .get(getAllCities)
 
+
 router
   .route('/cities/:id')
   .get(getSingleCity)
 
-router.route('/profile/').get(secureRoute, getUserProfile)
+router.route('/users').get(getAllusers)
+router.route('/users/:id')
+  .get( secureRoute,getUserProfile)
 
 router.route('/register').post(registerUser)
 

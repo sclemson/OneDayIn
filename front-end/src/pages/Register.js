@@ -80,7 +80,7 @@ const Register = () => {
         </div>
         {isError ? (
           <div className='error'>
-            <p>Error. Please try again.</p>
+            <p>Error in registering Please try again.</p>
           </div>
         ) : (
           <></>
