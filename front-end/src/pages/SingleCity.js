@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import CityInformation from '../components/CityInformation'
@@ -17,12 +18,20 @@ const SingleCity = () => {
     <section>
       {city ? 
         <CityInformation {...city} isHorizontal={true} />
+<<<<<<< HEAD
         : 
+=======
+        :  
+>>>>>>> development
         <div>
           <h4>Loading...</h4>
         </div>
       }
+<<<<<<< HEAD
     </section>
+=======
+    </section>  
+>>>>>>> development
   )
 }
 

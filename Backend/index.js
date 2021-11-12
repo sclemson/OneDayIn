@@ -5,12 +5,15 @@ import router from './config/router.js'
 
 const app = express()
 
+// Enable CORS
+
 const startServers = async () => {
   try {
     // mongoose connect
     await mongoose.connect(dbURI)
     console.log('Database connected successfully')
     // JSON parser
+    
     app.use(express.json())
     // Logger
     app.use((req, _res, next) => {

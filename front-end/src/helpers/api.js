@@ -24,7 +24,34 @@ export const getCity = async (id) => {
   const response = await axios(config)
   return response.data
 }
+export const getUserName = async (id) => {
+  const config = {
+    method: 'get',
+    url: `${baseUrl}/users/${id}`,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    }
+  }
 
+<<<<<<< HEAD
+=======
+  const response = await axios(config)
+  return response.data
+}
+// export const deleteCity = async (id) => {
+//   const config = {
+//     method: 'delete',
+//     url: `${baseUrl}/cities/${id}`,
+//     headers: {
+//       Authorization: `Bearer ${getToken()}`,
+//     },
+//   }
+
+//   const response = await axios(config)
+//   return response.data
+// }
+
+>>>>>>> development
 export const login = async (data) => {
   return makeAxiosRequest('/login', data)
 }

@@ -11,9 +11,11 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 import Register from './pages/Register'
+import Profile from './pages/Profile'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [user, setUser] = useState(null)
 
   useEffect(() => {
     // We consider the user "logged in" whenever the token is present…
@@ -24,11 +26,13 @@ function App() {
     }
   }, [])
 
+
   return (
     <Router>
       <header className='App-header'>
         <Header />
-        <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+        <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}  
+          user={user} setUser={setUser}/>
       </header>
       <main>
         {/* In a switch, only the first route that matches is shown. */}
@@ -48,6 +52,8 @@ function App() {
             )}
           />
           <Route path='/register' component={Register} />
+          <Route path='/users/:id' component={Profile} />
+          
           {/* By not specifying a path, we catch all. */}
           <Route component={NotFound} />
         </Switch>

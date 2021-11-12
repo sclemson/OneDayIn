@@ -26,6 +26,9 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
         {isLoggedIn ? (
           <>
             <li>
+              <Link to='/users/:id'>profile</Link>
+            </li>
+            <li>
               <button onClick={handleLogout}>Logout</button>
             </li>
           </>
@@ -34,9 +37,13 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
             <li>
               <Link to='/login'>Login</Link>
             </li>
+<<<<<<< HEAD
             <li>
               <Link to='/register'>Register</Link>
             </li>
+=======
+            
+>>>>>>> development
           </>
         )}
       </ul>
