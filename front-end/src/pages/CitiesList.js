@@ -13,7 +13,7 @@ const CitiesList = () => {
   console.log(cities)
 
   return (
-    <section className='cityList'>
+    <section className='city-list'>
       <ul>
         {cities.map((city) => (
           <li key={city._id}>

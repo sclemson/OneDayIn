@@ -32,7 +32,9 @@ export default [ {
     "walk": [{ "name": "Parkland Walk",
     "location": "Florence Rd" }],
     
-    "secret": [{ "name": "Churchill's Secret Station", "location": "Down St" }]
+    "secret": [{ "name": "Churchill's Secret Station", "location": "Down St" }],
+    "thumbnailImage": "https://i.imgur.com/L8x62q8.jpeg",
+    "bannerImage": "https://i.imgur.com/DqnHdOb.jpeg"
 },
 {
     "name": "Paris",
@@ -67,7 +69,9 @@ export default [ {
     "walk": [{ "name": "Walking Tours of Paris",
     "location": "Rue Saint-Antoine" }],
 
-    "secret": [{ "name": "Paris Point Zero", "location": "Notre Dame" }]
+    "secret": [{ "name": "Paris Point Zero", "location": "Notre Dame" }],
+    "thumbnailImage": "https://i.imgur.com/1pov2ft.jpeg",
+    "bannerImage": "https://i.imgur.com/CG83tU7.jpeg"
 },
 {
     "name": "Rome",
@@ -95,7 +99,9 @@ export default [ {
     "walk": [ { "name": 'Galleria Borghese', "location": 'Villa Borghese' }, 
     { "name": "Foro Italico", "location": "Fiume Tivere" } ],
 
-    "secret": [ { "name": "Piazzale Garibaldi", "location": "Gianicolo"} ]
+    "secret": [ { "name": "Piazzale Garibaldi", "location": "Gianicolo"} ],
+    "thumbnailImage": "https://i.imgur.com/DvURDoz.jpeg",
+    "bannerImage": "https://i.imgur.com/55R7jXb.jpeg"
 },
 {
     "name": "Barcelona",
@@ -121,7 +127,10 @@ export default [ {
 
     "walk": [{ "name": "Parc de la Ciutadella", "location": "Ciutat Vella" } ],
 
-    "secret": [{ "name": "CosmoCaixa", "location": "Sant Gervasi - la Bonanova" }]
+    "secret": [{ "name": "CosmoCaixa", "location": "Sant Gervasi - la Bonanova" }],
+    "thumbnailImage": "https://i.imgur.com/INnhGxm.jpeg",
+    "bannerImage": "https://i.imgur.com/0bCLWKk.jpeg"
+    
 },
 {
     "name": "Berlin",
@@ -148,7 +157,9 @@ export default [ {
 
     "walk": [{ "name": "Treptower Park", "location": "Alt-Treptow" }], 
 
-    "secret": [ { "name": "Mauerpark Flea Market (on Sundays)", "location": "Gleimviertel" }]
+    "secret": [ { "name": "Mauerpark Flea Market (on Sundays)", "location": "Gleimviertel" }],
+    "thumbnailImage": "https://i.imgur.com/QorRX94.jpeg",
+    "bannerImage": "https://i.imgur.com/W6RFyD6.jpeg"
 },
 {
     "name": "Helsinki",
@@ -176,7 +187,9 @@ export default [ {
     "walk": [{ "name": "Sipoonkorpi National Park", "location": "Sipoo" }, 
     { "name": "Central Park", "location": "Pirkkola" }],
 
-    "secret": [{ "name": "Loyly Sauna", "location": "Uusimaa"}]
+    "secret": [{ "name": "Loyly Sauna", "location": "Uusimaa"}],
+    "thumbnailImage": "https://i.imgur.com/qKbGAow.jpeg",
+    "bannerImage": "https://i.imgur.com/FxCqrMz.jpeg"
 },
 {
     "name": "Gdansk",
@@ -204,7 +217,9 @@ export default [ {
     "walk": [{ "name": "Old Town River Walk", "location": "Old Town" }, 
     { "name": "Gradowa Hill Walk", "location": "Gradowa" }],
 
-    "secret": [{ "name": "Kepa Redlowska Nature Reserve", "location": "Redlowo"}]
+    "secret": [{ "name": "Kepa Redlowska Nature Reserve", "location": "Redlowo"}],
+    "thumbnailImage": "https://i.imgur.com/ecRAexE.jpeg",
+    "bannerImage": "https://i.imgur.com/rZSFuCr.jpeg"
 },
 {
     "name": "Milan",
@@ -232,7 +247,9 @@ export default [ {
     "walk": [ { "name": "Chiesa di San Maurizio Al Monastero Maggiore", "location": "Castello" }, 
     { "name": "I Navigli", "location": "Naviglio" } ],
 
-    "secret": [{ "name": "Cimitero Monumentale", "location": "Isola"}]
+    "secret": [{ "name": "Cimitero Monumentale", "location": "Isola"}],
+    "thumbnailImage": "https://i.imgur.com/CUHBKzw.jpeg",
+    "bannerImage": "https://i.imgur.com/xEWE4Va.jpeg"
 },
 {
     "name": "Madrid",
@@ -266,7 +283,9 @@ export default [ {
     "walk": [{ "name": "Siete Picos",
     "location": "Puerto de Navacerrada" }],
 
-    "secret": [{ "name": "Cafetín La Quimera", "location": "Las Ventas" }]
+    "secret": [{ "name": "Cafetín La Quimera", "location": "Las Ventas" }],
+    "thumbnailImage": "https://i.imgur.com/W0PAawP.jpeg",
+    "bannerImage": "https://i.imgur.com/g5lQC7o.jpeg"
 },
 {
     "name": 'Budapest',
@@ -292,7 +311,9 @@ export default [ {
 
     "walk": [{ "name": "City Park", "location": "Városliget" } ],
 
-    "secret": [ { "name": "Roman Ruins of Aquincum", "location": "Óbuda District" } ]
+    "secret": [ { "name": "Roman Ruins of Aquincum", "location": "Óbuda District" } ],
+    "thumbnailImage": "https://i.imgur.com/M0PQaUx.jpeg",
+    "bannerImage": "https://i.imgur.com/zDlmw8L.jpeg"
 }
 ]
 

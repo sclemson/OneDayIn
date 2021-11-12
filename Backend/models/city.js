@@ -59,7 +59,9 @@ const citySchema = new mongoose.Schema({
   walk: [hotspotSchema],
   secret: [hotspotSchema],
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
-  recommendations: [recommendationSchema]
+  recommendations: [recommendationSchema],
+  thumbnailImage: { type: String, required: true },
+  bannerImage: { type: String, required: true }
 })
 
 // cnSchema.virtual('averageRating').get(function () {

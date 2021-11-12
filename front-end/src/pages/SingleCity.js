@@ -4,35 +4,24 @@ import CityInformation from '../components/CityInformation'
 import { getCity } from '../helpers/api'
 
 const SingleCity = () => {
-  const [city, setCity] = useState([])
+  const [city, setCity] = useState(null)
   const { id } = useParams()
   //   const history = useHistory()
 
   useEffect(() => {
     getCity(id).then(setCity)
-    console.log('single city page loaded', city)
   }, [id])
-
-  //   const handleDeleteClick = () => {
-  //     deleteCheese(id)
-  //       .then((data) => {
-  //         console.log(data)
-  //         // Redirect the user after a successful delete
-  //         history.push('/cheeses')
-  //       })
-  //       .catch((err) => {
-  //         console.error(err)
-  //         alert(err)
-  //       })
-  //   }
-
+  
+  console.log('single city page loaded', city)
   return (
     <section>
-      {/* <p>
-        <Link to={`/cities/${id}/edit`}>Edit this city!</Link>
-        <button onClick={handleDeleteClick}>Delete this city!</button>
-      </p> */}
-      <CityInformation {...city} isHorizontal={true} />
+      {city ? 
+        <CityInformation {...city} isHorizontal={true} />
+        : 
+        <div>
+          <h4>Loading...</h4>
+        </div>
+      }
     </section>
   )
 }

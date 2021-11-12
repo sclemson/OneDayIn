@@ -1,0 +1,17 @@
+h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.4);
+
+  ul {
+    margin: 0;
+    display: flex;
+
+    li {
+      padding: 10px;
+      list-style: none;
+    }
+  }
+}
