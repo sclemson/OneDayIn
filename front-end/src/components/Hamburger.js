@@ -12,8 +12,7 @@ const options = [
   }
 ]
 
-
-function OCExample({ ...props }) {
+function OCExample({ isLoggedIn, setIsLoggedIn, user, setUser, ...options }) {
   const [show, setShow] = useState(false)
   
   const handleClose = () => setShow(false)
@@ -27,23 +26,24 @@ function OCExample({ ...props }) {
         Launch
       </Button> */}
       <Hamburger onClick={handleShow} toggle={setShow} />
-      <Offcanvas show={show} onHide={handleClose} {...props}>
+      <Offcanvas show={show} onHide={handleClose} { ...options }>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>One Day In...</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Nav />
+          <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}  
+            user={user} setUser={setUser}/>
         </Offcanvas.Body>
       </Offcanvas>
     </>
   )
 }
 
-function Example() {
+function Example({ isLoggedIn, setIsLoggedIn, user, setUser }) {
   return (
     <>
-      {options.map((props, idx) => (
-        <OCExample key={idx} {...props} />
+      {options.map((options, idx) => (
+        <OCExample key={idx} { ...options } isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} user={user} setUser={setUser}/>
       ))}
     </>
   )
