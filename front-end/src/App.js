@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import Nav from './components/Nav'
+// import Nav from './components/Nav'
+import Example from './components/Hamburger'
 import Header from './components/Header'
 import { getToken } from './helpers/auth'
 import About from './pages/About'
@@ -32,9 +33,11 @@ function App() {
   return (
     <Router>
       <header className='App-header'>
-        <Header />
-        <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}  
+        <Example isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}  
           user={user} setUser={setUser}/>
+        <Header />
+        {/* <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}  
+          user={user} setUser={setUser}/> */}
       </header>
       <main>
         {/* In a switch, only the first route that matches is shown. */}

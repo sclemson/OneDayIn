@@ -49,3 +49,4 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
 }
 
 export default Nav
+

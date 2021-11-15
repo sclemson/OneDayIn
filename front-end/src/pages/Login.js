@@ -72,7 +72,7 @@ const Login = ({ setIsLoggedIn }) => {
       <div>
         
          
-        <p> Not a Member!! <Link to='/register'>Register Here</Link>   
+        <p>Not a Member? <Link to='/register'>Register Here</Link>   
         </p>     
       </div>
     </section>

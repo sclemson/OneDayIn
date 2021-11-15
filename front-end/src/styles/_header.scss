@@ -4,11 +4,12 @@ h1 {
 }
 
 nav {
-  background-color: $cobalt-blue;
+  background-color: white;
 
   ul {
     margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 
     li {
@@ -18,7 +19,7 @@ nav {
 
     a {
       text-decoration: none;
-      color: white;
+      color: $cobalt-blue;
       font-size: 16px;
     }
 
