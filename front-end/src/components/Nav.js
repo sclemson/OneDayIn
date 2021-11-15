@@ -37,13 +37,9 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
             <li>
               <Link to='/login'>Login</Link>
             </li>
-<<<<<<< HEAD
             <li>
               <Link to='/register'>Register</Link>
             </li>
-=======
-            
->>>>>>> development
           </>
         )}
       </ul>
