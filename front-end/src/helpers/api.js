@@ -33,8 +33,6 @@ export const getUserName = async (id) => {
     }
   }
 
-<<<<<<< HEAD
-=======
   const response = await axios(config)
   return response.data
 }
@@ -51,7 +49,6 @@ export const getUserName = async (id) => {
 //   return response.data
 // }
 
->>>>>>> development
 export const login = async (data) => {
   return makeAxiosRequest('/login', data)
 }
