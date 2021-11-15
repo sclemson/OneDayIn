@@ -48,7 +48,7 @@ const Register = () => {
   const formInputProps = { data, errorInfo, handleFormChange }
 
   return (
-    <section>
+    <section className="login">
       <form onSubmit={handleSubmit}>
         <h1>Register with One Day In...</h1>
         <FormInput

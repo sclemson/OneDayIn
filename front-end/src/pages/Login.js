@@ -43,7 +43,7 @@ const Login = ({ setIsLoggedIn }) => {
   }
   const formInputProps = { data, errorInfo, handleFormChange }
   return (
-    <section>
+    <section className="login">
       <form onSubmit={handleSubmit}>
         <h1>Sign in to One Day In...</h1>
         <FormInput
@@ -70,9 +70,9 @@ const Login = ({ setIsLoggedIn }) => {
         )}
       </form>
       <div>
-        <p>
-            Not a Member!! </p> 
-        <p> <Link to='/register'>Click here to Register</Link>   
+        
+         
+        <p> Not a Member!! <Link to='/register'>Register Here</Link>   
         </p>     
       </div>
     </section>
