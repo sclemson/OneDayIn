@@ -1,12 +1,14 @@
 import React from 'react'
 import Hotspot from './Hotspot'
+import HotspotNoCoins from './HotspotNoCoins'
 import SingleHotspot from './SingleHotspot'
+import { Link } from 'react-router-dom'
 
 const CityInformation = ({
-  // _id,
+  _id,
   name,
   country,
-  primarylanguage,
+  // primarylanguage,
   overview,
   bannerImage,
   eat,
@@ -17,8 +19,9 @@ const CityInformation = ({
   secret
 }) => {
 
-  console.log(name, country)
-  console.log('City information loaded')
+  console.log(_id)
+
+  
 
   return (
     <div className='CityInformation'>
@@ -27,8 +30,8 @@ const CityInformation = ({
         <h3>{country}</h3>
       </div>
       <div className='info-section'>
-        <h4>Primary Language: {primarylanguage}</h4>
         <p>{overview}</p>
+        {/* <h4>Primary Language: {primarylanguage}</h4> */}
       </div>
       <div className='hotspot-section'>
         <div className='hotspot-row'>
@@ -53,7 +56,7 @@ const CityInformation = ({
           <div className='hotspot-icon'>
             <i className="fas fa-binoculars"></i>
           </div>
-          <Hotspot arr={see} />
+          <HotspotNoCoins arr={see} />
         </div>
         <div className='hotspot-single'>
           <div className='hotspot'>
@@ -76,13 +79,16 @@ const CityInformation = ({
             <h3>User Suggestions:</h3>
           </div>
           <div className='user-bottom-row'>
-            <i className="fas fa-utensils"></i>
-            <i className="fas fa-glass-cheers"></i>
-            <i className="fas fa-bed"></i>
-            <i className="fas fa-binoculars"></i>
-            <i className="fas fa-hiking"></i>
-            <i className="fas fa-user-secret"></i>
+            <Link to={`/cities/${_id}/recommendations/eat`}><i className="fas fa-utensils"></i></Link>
+            <Link to={`/cities/${_id}/recommendations/drink`}><i className="fas fa-glass-cheers"></i></Link>
+            <Link to={`/cities/${_id}/recommendations/stay`}><i className="fas fa-bed"></i></Link>
+            <Link to={`/cities/${_id}/recommendations/see`}><i className="fas fa-binoculars"></i></Link>
+            <Link to={`/cities/${_id}/recommendations/walk`}><i className="fas fa-hiking"></i></Link>
+            <Link to={`/cities/${_id}/recommendations/secret`}><i className="fas fa-user-secret"></i></Link>
           </div>  
+        </div>
+        <div className='add-suggestion'>
+          <h4>Got a recommendation? <Link to={`/cities/${_id}/recommendations`}>Add it here</Link> </h4>
         </div>
       </div>
     </div>

@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { removeToken } from '../helpers/auth'
+import { removeToken, removeUserId, getUserId } from '../helpers/auth'
 
 const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
   const history = useHistory()
 
   const handleLogout = () => {
     removeToken()
+    removeUserId()
     setIsLoggedIn(false)
     history.push('/')
   }
@@ -26,7 +27,7 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
         {isLoggedIn ? (
           <>
             <li>
-              <Link to='/users/:id'>profile</Link>
+              <Link to={`/users/${getUserId()}`}>Profile</Link>
             </li>
             <li>
               <button onClick={handleLogout}>Logout</button>
@@ -37,13 +38,9 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
             <li>
               <Link to='/login'>Login</Link>
             </li>
-<<<<<<< HEAD
             <li>
               <Link to='/register'>Register</Link>
             </li>
-=======
-            
->>>>>>> development
           </>
         )}
       </ul>

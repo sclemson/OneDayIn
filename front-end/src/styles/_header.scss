@@ -1,17 +1,32 @@
 h1 {
   margin: 0;
+  background-color: $tufts-blue;
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: $cobalt-blue;
 
   ul {
     margin: 0;
     display: flex;
+    justify-content: space-evenly;
 
     li {
       padding: 10px;
       list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: $cobalt-blue;
+      border: none;
+      color: white;
+      font-size: 14px;
     }
   }
 }

@@ -10,8 +10,9 @@ const Profile = () => {
   console.log(id)
   useEffect(() => {
     getUserName(id).then(setUser)
-    console.log('single user page loaded', user)
+      .then(console.log('single user page loaded', user))
   }, [id])
+
   return (
     <section>
       

@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { login } from '../helpers/api'
-import { setToken } from '../helpers/auth'
+import { setToken, setUserId } from '../helpers/auth'
 import FormInput from '../components/FormInput'
+
 const Login = ({ setIsLoggedIn }) => {
   // State variables to track user form input
   const [data, setData] = useState({
@@ -17,9 +18,10 @@ const Login = ({ setIsLoggedIn }) => {
     event.preventDefault()
     login(data).then(handleSuccessfulLogin).catch(handleError)
   }
-  const handleSuccessfulLogin = ({ token }) => {
+  const handleSuccessfulLogin = ({ token, userId }) => {
     // We need to store the token for later
     setToken(token)
+    setUserId(userId)
     // Set the App state variable isLoggedIn to true
     setIsLoggedIn(true)
     setIsError(false)

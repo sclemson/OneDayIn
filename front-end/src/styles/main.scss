@@ -1,7 +1,14 @@
+@import "colours";
 @import "header";
 @import "singlecity";
 @import "cities";
+@import "userRecommendationPage";
+@import "recommendationForm";
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }

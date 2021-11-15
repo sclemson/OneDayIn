@@ -1,0 +1,182 @@
+.user-rec-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  .top-section {
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    width: 800px;
+    background-size: cover;
+
+    h2 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 30px;
+    }
+  }
+
+  .type-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: $tufts-blue;
+    border-bottom: 3px solid $tufts-blue;
+    width: 400px;
+
+    h3 {
+      margin: 0;
+      padding-left: 10px;
+    }
+  }
+
+  .radio {
+    display: flex;
+  }
+
+  .user-recommendations {
+    color: white;
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin-bottom: 20px;
+
+        .user-rec {
+          width: 800px;
+          border-radius: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          background-color: $tufts-blue;
+
+          h2 {
+            margin: 0;
+            padding: 5px 0 0 5px;
+            border-bottom: 2px solid #0d47a1;
+          }
+
+          h4 {
+            margin: 0;
+            padding: 5px;
+          }
+
+          .third-row {
+            width: 100%;
+            background-color: $blue-jeans-2;
+            border-radius: 5px;
+            padding: 10px;
+            font-style: italic;
+          }
+
+          .fourth-row {
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0d47a1;
+
+            .user-rec-price,
+            .user-rec-quality,
+            .user-rec-value {
+              display: flex;
+              justify-content: center;
+              width: 33%;
+
+              p {
+                margin: 0;
+                padding-right: 10px;
+              }
+
+              .fa-coins {
+                font-size: 20px;
+              }
+
+              .fa-star {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .bottom-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h6 {
+              margin: 10px 0;
+              color: $cobalt-blue;
+              font-size: 12px;
+              padding: 0 10px;
+
+              a {
+                text-decoration: none;
+                color: $cobalt-blue;
+              }
+            }
+
+            .rec-rating {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 300px;
+
+              .rating {
+                width: 40px;
+                margin-right: 10px;
+                background-color: $tufts-blue;
+                border: none;
+                color: white;
+              }
+
+              .submit {
+                color: $tufts-blue;
+                border: none;
+                background-color: white;
+                border-radius: 10px;
+                font-size: 12px;
+                padding: 2px 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .add-suggestion {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid $tufts-blue;
+    padding: 20px;
+    width: 80%;
+
+    h4 {
+      margin: 0;
+
+      a {
+        color: $tufts-blue;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

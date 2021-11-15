@@ -27,7 +27,7 @@ const recommendationSchema = new mongoose.Schema(
 )
 
 recommendationSchema.virtual('averageRating').get(function () {
-  if (!this.ratings.length) return 'Not rated yet'
+  if (!this.ratings.length) return null
   const sumOfRatings = this.ratings.reduce((acc, rating) => {
     if (!rating.rating) return acc
     return acc + rating.rating

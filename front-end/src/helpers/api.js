@@ -33,11 +33,45 @@ export const getUserName = async (id) => {
     }
   }
 
-<<<<<<< HEAD
-=======
   const response = await axios(config)
   return response.data
 }
+
+export const addCityRecommendation = async (id, data) => {
+  const config = {
+    method: 'post',
+    url: `${baseUrl}/cities/${id}/recommendations`,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    },
+    data
+  }
+
+  console.log(config)
+
+  const response = await axios(config)
+  console.log(response)
+  return response.data
+}
+
+export const addRating = async (id, recId, data) => {
+  const config = {
+    method: 'post',
+    url: `${baseUrl}/cities/${id}/recommendations/${recId}`,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    },
+    data
+  }
+
+  console.log(config)
+
+  const response = await axios(config)
+  console.log(response)
+  return response.data
+}
+
+
 // export const deleteCity = async (id) => {
 //   const config = {
 //     method: 'delete',
@@ -51,7 +85,6 @@ export const getUserName = async (id) => {
 //   return response.data
 // }
 
->>>>>>> development
 export const login = async (data) => {
   return makeAxiosRequest('/login', data)
 }

@@ -20,8 +20,9 @@ export const loginUser = async (req, res) => {
       throw new Error()
     }
     const token = jwt.sign({ sub: userToLogin._id }, secret, { expiresIn: '7 days' })
+    const userId = userToLogin._id
     
-    return res.status(200).json({ message: `Welcome back ${userToLogin.username}`, token: token })
+    return res.status(200).json({ message: `Welcome back ${userToLogin.username}`, token: token, userId: userId})
   } catch (err) {
     console.log(err)
     return res.status(422).json({ message: 'Unauthorised' })
