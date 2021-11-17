@@ -4,6 +4,7 @@ import HotspotNoCoins from './HotspotNoCoins'
 import SingleHotspot from './SingleHotspot'
 import { Link } from 'react-router-dom'
 
+
 const CityInformation = ({
   _id,
   name,
@@ -78,6 +79,8 @@ const CityInformation = ({
           <div className='user-top-row'>
             <h3>User Suggestions:</h3>
           </div>
+         
+          
           <div className='user-bottom-row'>
             <Link to={`/cities/${_id}/recommendations/eat`}><i className="fas fa-utensils"></i></Link>
             <Link to={`/cities/${_id}/recommendations/drink`}><i className="fas fa-glass-cheers"></i></Link>
@@ -86,6 +89,7 @@ const CityInformation = ({
             <Link to={`/cities/${_id}/recommendations/walk`}><i className="fas fa-hiking"></i></Link>
             <Link to={`/cities/${_id}/recommendations/secret`}><i className="fas fa-user-secret"></i></Link>
           </div>  
+          
         </div>
         <div className='add-suggestion'>
           <h4>Got a recommendation? <Link to={`/cities/${_id}/recommendations`}>Add it here</Link> </h4>

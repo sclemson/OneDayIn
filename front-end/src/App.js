@@ -14,6 +14,7 @@ import Register from './pages/Register'
 import Profile from './pages/Profile'
 import AddRecommendation from './pages/AddRecommendation'
 import { UserRecommendations } from './pages/UserRecommendations'
+import Footer from './components/Footer'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -43,6 +44,7 @@ function App() {
               Each of our routes has two props: a 'path' to match,
               and a 'component' to render when we do.
             */}
+            
           <Route path='/cities/:id/recommendations/:type' component={UserRecommendations} />
           <Route path='/cities/:id/recommendations' component={AddRecommendation} />
           <Route path='/cities/:id' component={SingleCity} />
@@ -62,6 +64,9 @@ function App() {
           <Route component={NotFound} />
         </Switch>
       </main>
+      <footer className="app-footer">
+        <Footer />
+      </footer>
     </Router>
   )
 }
