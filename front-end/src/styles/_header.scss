@@ -8,8 +8,16 @@ h1 {
   color: rgb(0, 0, 0);
 }
 
+.navHeader {
+  margin-top: 50px;
+}
+
 nav {
   background-color: white;
+
+  h2 {
+    margin-top: 50px;
+  }
 
   ul {
     margin: 0;
