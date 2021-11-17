@@ -21,7 +21,7 @@ export default [ {
     "location": "Blackfriars" }],
     
     "see": [{ "name": "Buckingham Palace",
-    "location": "St James'" }, { " name": "The Imperial War Museum", "location": "Elephant and Castle"},
+    "location": "St James'" }, { "name": "The Imperial War Museum", "location": "Elephant and Castle"},
     { "name": "Tate Modern", "location": "South Bank" }],
     
     "stay": [ { "name": "The Tower Hotel",

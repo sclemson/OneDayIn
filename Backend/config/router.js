@@ -3,11 +3,15 @@ import {
   getAllCities,
   getSingleCity,
   addARecommendation,
-  addARating
+  addARating,
+  editARating,
+  getRecommendation,
+  editRecommendation,
+  DeleteRecommendation
 } from '../controllers/cities.js'
 import { registerUser, loginUser } from '../controllers/auth.js'
 import { secureRoute } from './secureRoute.js'
-import { getAllusers, getUserProfile } from '../controllers/users.js'
+import { getAllusers, getUserProfile, editUserProfile } from '../controllers/users.js'
 
 const router = express.Router()
 
@@ -22,7 +26,8 @@ router
 
 router.route('/users').get(getAllusers)
 router.route('/users/:id')
-  .get( secureRoute,getUserProfile)
+  .get(secureRoute, getUserProfile)
+  .put(secureRoute, editUserProfile)
 
 router.route('/register').post(registerUser)
 
@@ -31,5 +36,10 @@ router.route('/login').post(loginUser)
 router.route('/cities/:id/recommendations').post(secureRoute, addARecommendation)
 
 router.route('/cities/:id/recommendations/:recommendationId').post(secureRoute, addARating)
+  .get(getRecommendation)
+  .put(secureRoute, editRecommendation)
+  .delete(secureRoute, DeleteRecommendation)
+
+router.route('/cities/:id/recommendations/:recommendationId/ratings/:ratingId').put(secureRoute, editARating)
 
 export default router

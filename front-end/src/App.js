@@ -14,6 +14,8 @@ import Register from './pages/Register'
 import Profile from './pages/Profile'
 import AddRecommendation from './pages/AddRecommendation'
 import { UserRecommendations } from './pages/UserRecommendations'
+import OtherProfiles from './pages/OtherProfiles'
+import EditRecommendation from './pages/EditRecommendation'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -43,6 +45,7 @@ function App() {
               Each of our routes has two props: a 'path' to match,
               and a 'component' to render when we do.
             */}
+          <Route path='/cities/:id/recommendations/edit/:recId' component={EditRecommendation} />
           <Route path='/cities/:id/recommendations/:type' component={UserRecommendations} />
           <Route path='/cities/:id/recommendations' component={AddRecommendation} />
           <Route path='/cities/:id' component={SingleCity} />
@@ -57,6 +60,7 @@ function App() {
           />
           <Route path='/register' component={Register} />
           <Route path='/users/:id' component={Profile} />
+          <Route path='/profiles/:id' component={OtherProfiles} />
           
           {/* By not specifying a path, we catch all. */}
           <Route component={NotFound} />

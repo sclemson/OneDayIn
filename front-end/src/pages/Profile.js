@@ -2,6 +2,7 @@ import React from 'react'
 import { getUserName } from '../helpers/api'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
+import ProfileEditForm from '../components/ProfileEditForm'
 
 const Profile = () => {
   const [user, setUser] = useState(null)
@@ -10,15 +11,21 @@ const Profile = () => {
   console.log(id)
   useEffect(() => {
     getUserName(id).then(setUser)
-      .then(console.log('single user page loaded', user))
+      
   }, [id])
 
   return (
     <section>
       
       {user ? (
-        <div>
-          <h3>{user.username}</h3>
+        <div className='user-page'>
+          <div className='user-info-welcome'>
+            <h3>Hello {user.username}</h3>
+          </div>
+          <div className='user-info'>
+            <h4>Account Details:</h4>
+            <ProfileEditForm {...user}/>
+          </div>
         </div>
       ) : (
         <div>

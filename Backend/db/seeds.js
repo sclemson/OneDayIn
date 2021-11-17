@@ -25,7 +25,7 @@ const seedDatabase = async () => {
         return city
       }
     )
-    console.log('Cities with Owners ->', citiesWithOwners)
+    console.log('Cities with Owners ->')
 
     // Seed that database with the data file that we import
     const citiesAdded = await City.create(

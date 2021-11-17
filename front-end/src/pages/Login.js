@@ -26,7 +26,7 @@ const Login = ({ setIsLoggedIn }) => {
     setIsLoggedIn(true)
     setIsError(false)
     // And finally, redirect the user
-    history.push('/users/:id')
+    history.push('/cities')
   }
   const handleError = (error) => {
     if (error.response) {
