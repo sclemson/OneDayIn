@@ -5,16 +5,15 @@ import bcrypt from 'bcrypt'
 const userSchema = new mongoose.Schema({
   username: { type: String, unique: true, required: true, maxlength: 30 },
   email: { type: String, unique: true, required: true },
-  password: { type: String, required: true }
+  password: { type: String, required: true },
+  recommendations: [],
+  location: { type: String },
+  bio: { type: String, maxlength: 300 },
+  favouriteCity: { type: String }
   // number of contributions //
 })
 
-// Show the C Nouns the user has created
-// userSchema.virtual('createdCNouns', {
-//   ref: 'CollectiveNoun',
-//   localField: '_id',
-//   foreignField: 'owner',
-// })
+
 
 // REMOVE PASSWORD WHEN RETURNING USER AS JSON
 userSchema.set('toJSON', {

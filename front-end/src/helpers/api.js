@@ -24,6 +24,19 @@ export const getCity = async (id) => {
   const response = await axios(config)
   return response.data
 }
+
+export const getRecommendation = async (id, recId) => {
+  const config = {
+    method: 'get',
+    url: `${baseUrl}/cities/${id}/recommendations/${recId}`,
+    headers: {}
+  }
+
+  const response = await axios(config)
+  console.log()
+  return response.data
+}
+
 export const getUserName = async (id) => {
   const config = {
     method: 'get',
@@ -31,6 +44,20 @@ export const getUserName = async (id) => {
     headers: {
       Authorization: `Bearer ${getToken()}`
     }
+  }
+
+  const response = await axios(config)
+  return response.data
+}
+
+export const editUser = async (id, data) => {
+  const config = {
+    method: 'put',
+    url: `${baseUrl}/users/${id}`,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    },
+    data
   }
 
   const response = await axios(config)
@@ -54,9 +81,9 @@ export const addCityRecommendation = async (id, data) => {
   return response.data
 }
 
-export const addRating = async (id, recId, data) => {
+export const editCityRecommendation = async (id, recId, data) => {
   const config = {
-    method: 'post',
+    method: 'put',
     url: `${baseUrl}/cities/${id}/recommendations/${recId}`,
     headers: {
       Authorization: `Bearer ${getToken()}`
@@ -68,6 +95,48 @@ export const addRating = async (id, recId, data) => {
 
   const response = await axios(config)
   console.log(response)
+  return response.data
+}
+
+export const deleteCityRecommendation = async (id, recId) => {
+  const config = {
+    method: 'delete',
+    url: `${baseUrl}/cities/${id}/recommendations/${recId}`,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    }
+  }
+
+  console.log(config)
+
+  const response = await axios(config)
+  console.log(response)
+  return response.data
+}
+
+export const addRating = async (id, recId, data) => {
+  const config = {
+    method: 'post',
+    url: `${baseUrl}/cities/${id}/recommendations/${recId}`,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    },
+    data
+  }
+  const response = await axios(config)
+  return response.data
+}
+
+export const editRating = async (id, recId, ratId, data) => {
+  const config = {
+    method: 'put',
+    url: `${baseUrl}/cities/${id}/recommendations/${recId}/ratings/${ratId}`,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    },
+    data
+  }
+  const response = await axios(config)
   return response.data
 }
 

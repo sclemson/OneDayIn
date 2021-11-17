@@ -3,16 +3,24 @@ import { useParams } from 'react-router'
 import { getCity } from '../helpers/api'
 import RecommendationCard from '../components/RecommendationCard'
 import { Link } from 'react-router-dom'
+import { getToken } from '../helpers/auth'
 
 export const UserRecommendations = () => {
   
   const [ city, setCity ] = useState(null)
   const [ sortedRecommendations, setSortedRecommendations] = useState([])
   const { id, type } = useParams()
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   console.log(id, type)
 
   useEffect(() => {
 
+    if (getToken()) {
+      setIsLoggedIn(true)
+    } else {
+      setIsLoggedIn(false)
+    }
+  
     const sortRecommendations = async (type) => {
       const selectedCity = await getCity(id)
       setCity(selectedCity)
@@ -61,9 +69,12 @@ export const UserRecommendations = () => {
               ))}
             </ul>
           </div>
-          <div className='add-suggestion'>
-            <h4>Got a recommendation? <Link to={`/cities/${city._id}/recommendations`}>Add it here</Link> </h4>
-          </div>
+          {isLoggedIn ?
+            <div className='add-suggestion'>
+              <h4>Got a recommendation? <Link to={`/cities/${city._id}/recommendations`}>Add it here</Link> </h4>
+            </div>
+            : <></>
+          }
         </div>
         : 
         <div>

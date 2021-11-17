@@ -1,6 +1,60 @@
-h1 {
-  margin: 0;
-  background-color: $tufts-blue;
+.header {
+  background-color: white;
+  height: 100px;
+
+  .compass {
+    height: 256px;
+    width: 300px;
+    position: absolute;
+    top: -77px;
+    left: 320px;
+  }
+
+  .needle {
+    height: 256px;
+    width: 300px;
+    position: absolute;
+    top: -77px;
+    left: 243px;
+    animation: spin 10s linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    15% {
+      transform: rotateZ(0deg);
+    }
+    40% {
+      transform: rotateZ(1365deg);
+    }
+    42% {
+      transform: rotateZ(1345deg);
+    }
+    44% {
+      transform: rotateZ(1360deg);
+    }
+    45% {
+      transform: rotateZ(1355deg);
+    }
+    60% {
+      transform: rotateZ(1355deg);
+    }
+    86% {
+      transform: rotateZ(10deg);
+    }
+    88% {
+      transform: rotateZ(-10deg);
+    }
+    89% {
+      transform: rotateZ(10deg);
+    }
+    90% {
+      transform: rotateZ(0deg);
+    }
+  }
 }
 
 .hamburger-react {

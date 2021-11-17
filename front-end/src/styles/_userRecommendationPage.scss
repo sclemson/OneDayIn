@@ -65,10 +65,44 @@
           padding-right: 10px;
           background-color: $tufts-blue;
 
+          .top-row {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #0d47a1;
+
+            .user-options {
+              display: flex;
+
+              h6 {
+                padding: 12px 5px 0 5px;
+                margin: 0;
+                font-size: 14px;
+
+                a {
+                  color: white;
+                  text-decoration: none;
+                }
+
+                a:hover {
+                  color: $cobalt-blue;
+                }
+              }
+
+              button {
+                background-color: $tufts-blue;
+                border: none;
+                color: white;
+              }
+
+              button:hover {
+                color: $cobalt-blue;
+              }
+            }
+          }
+
           h2 {
             margin: 0;
             padding: 5px 0 0 5px;
-            border-bottom: 2px solid #0d47a1;
           }
 
           h4 {

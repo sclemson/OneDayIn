@@ -10,8 +10,6 @@ const CitiesList = () => {
     getCities().then(setCities)
   }, [])
 
-  console.log(cities)
-
   return (
     <section className='city-list'>
       <ul>

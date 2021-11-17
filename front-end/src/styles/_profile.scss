@@ -1,0 +1,146 @@
+.profile-page {
+  display: flex;
+  justify-content: space-evenly;
+
+  .profile-box {
+    background-color: $tufts-blue;
+    width: 300px;
+    height: 220px;
+    border-radius: 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      margin-left: 5px;
+    }
+
+    .user-bio {
+      margin-left: 5px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .top-row {
+      width: 90%;
+      border-bottom: 3px solid $cobalt-blue;
+      text-align: center;
+
+      h2 {
+        margin: 10px 0 3px 0;
+      }
+    }
+
+    .information-row {
+      width: 90%;
+      display: flex;
+      padding: 10px 5px;
+    }
+  }
+
+  .recommendations-list {
+    margin-top: 10px;
+
+    li {
+      list-style: none;
+    }
+    .recommendation {
+      background-color: $tufts-blue;
+      border-radius: 15px;
+      color: white;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .top-row {
+        padding: 10px 0 3px 10px;
+        width: 90%;
+        border-bottom: 2px solid $cobalt-blue;
+
+        h2 {
+          margin: 0;
+          text-align: center;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .second-row {
+        h4 {
+          margin: 0;
+          padding: 5px 0;
+        }
+      }
+
+      .third-row {
+        background-color: $blue-jeans-2;
+        width: 90%;
+        border-radius: 5px;
+        padding: 5px;
+        font-style: italic;
+      }
+
+      .fourth-row {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #0d47a1;
+        width: 90%;
+
+        .user-rec-price {
+          display: flex;
+          justify-content: center;
+          width: 33%;
+
+          .fa-coins {
+            font-size: 20px;
+          }
+        }
+
+        .user-rec-quality,
+        .user-rec-value {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 33%;
+
+          p {
+            margin: 0;
+            font-size: 14px;
+            text-align: center;
+          }
+
+          .fa-star {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .bottom-row {
+        h6 {
+          margin: 0;
+          padding: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

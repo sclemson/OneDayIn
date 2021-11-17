@@ -8,16 +8,16 @@ const CityCard = ({
   thumbnailImage
 }) => {
   return (
-    <div className='city-card' style={{ backgroundImage: `url(${thumbnailImage})` }}>
-      <h2>
-        <Link to={`/cities/${_id}`}>
+    <Link to={`/cities/${_id}`}>
+      <div className='city-card' style={{ backgroundImage: `url(${thumbnailImage})` }}>
+        <h2>
           {name} 
-        </Link>
-      </h2>
-      <h3>
-        {country}
-      </h3>
-    </div>
+        </h2>
+        <h3>
+          {country}
+        </h3>
+      </div>
+    </Link>
   )
 }
 

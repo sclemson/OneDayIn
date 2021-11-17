@@ -3,8 +3,10 @@ import React from 'react'
 const Home = () => {
   return (
     <section>
-      <h1>Welcome to One Day In...</h1>
-      <p>Explore our cities</p>
+      <div className='home-page'>
+        <h2>Welcome to One Day In...</h2>
+        <p>A one stop destination to find what to do when you find yourself with time to kill in a city</p>
+      </div>
     </section>
   )
 }

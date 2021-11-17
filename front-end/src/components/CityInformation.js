@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Hotspot from './Hotspot'
 import HotspotNoCoins from './HotspotNoCoins'
 import SingleHotspot from './SingleHotspot'
 import { Link } from 'react-router-dom'
+import { getToken } from '../helpers/auth'
+
 
 const CityInformation = ({
   _id,
   name,
   country,
-  // primarylanguage,
+  languagecode,
   overview,
   bannerImage,
   eat,
@@ -21,6 +23,17 @@ const CityInformation = ({
 
   console.log(_id)
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  useEffect(() => {
+    // We consider the user "logged in" whenever the token is present…
+    if (getToken()) {
+      setIsLoggedIn(true)
+    } else {
+      setIsLoggedIn(false)
+    }
+  }, [])
+
   
 
   return (
@@ -31,7 +44,7 @@ const CityInformation = ({
       </div>
       <div className='info-section'>
         <p>{overview}</p>
-        {/* <h4>Primary Language: {primarylanguage}</h4> */}
+        <p>Stuck for something to say? <a href={`https://www.duolingo.com/dictionary/${languagecode}`} target='_blank' rel='noreferrer'>Try this</a></p>
       </div>
       <div className='hotspot-section'>
         <div className='hotspot-row'>
@@ -78,6 +91,8 @@ const CityInformation = ({
           <div className='user-top-row'>
             <h3>User Suggestions:</h3>
           </div>
+         
+          
           <div className='user-bottom-row'>
             <Link to={`/cities/${_id}/recommendations/eat`}><i className="fas fa-utensils"></i></Link>
             <Link to={`/cities/${_id}/recommendations/drink`}><i className="fas fa-glass-cheers"></i></Link>
@@ -86,10 +101,15 @@ const CityInformation = ({
             <Link to={`/cities/${_id}/recommendations/walk`}><i className="fas fa-hiking"></i></Link>
             <Link to={`/cities/${_id}/recommendations/secret`}><i className="fas fa-user-secret"></i></Link>
           </div>  
+          
         </div>
-        <div className='add-suggestion'>
-          <h4>Got a recommendation? <Link to={`/cities/${_id}/recommendations`}>Add it here</Link> </h4>
-        </div>
+        {isLoggedIn ?
+          <div className='add-suggestion'>
+            <h4>Got a recommendation? <Link to={`/cities/${_id}/recommendations`}>Add it here</Link> </h4>
+          </div>
+          :
+          <></>
+        }
       </div>
     </div>
   )

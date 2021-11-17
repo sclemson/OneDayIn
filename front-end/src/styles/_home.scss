@@ -1,0 +1,12 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $tufts-blue;
+
+  h2 {
+    border-bottom: 2px solid $tufts-blue;
+    width: 400px;
+    text-align: center;
+  }
+}
