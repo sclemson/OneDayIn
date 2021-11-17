@@ -21,7 +21,7 @@ export default [ {
     "location": "Blackfriars" }],
     
     "see": [{ "name": "Buckingham Palace",
-    "location": "St James'" }, { " name": "The Imperial War Museum", "location": "Elephant and Castle"},
+    "location": "St James'" }, { "name": "The Imperial War Museum", "location": "Elephant and Castle"},
     { "name": "Tate Modern", "location": "South Bank" }],
     
     "stay": [ { "name": "The Tower Hotel",
@@ -42,7 +42,7 @@ export default [ {
     "name": "Paris",
     "country": "France",
     "continent": "Europe",
-    "overview": "Paris is monumental, both due to its size but also its wealth of architectural heritage. Long considered the paragon of style, Paris is perhaps the most glamorous city in Europe. It is at once deeply traditional – a village-like metropolis whose inhabitants continue to be notorious for their hauteur – and famously cosmopolitan. The city’s reputation as a magnet for writers, artists and dissidents lives on, and it remains at the forefront of Western intellectual, artistic and literary life.",
+    "overview": "Paris is monumental, both due to its size but also its wealth of architectural heritage. Long considered the paragon of style, Paris is perhaps the most glamorous and cosmopolitan city in Europe. The city’s reputation as a magnet for writers, artists and dissidents lives on, and it remains at the forefront of Western intellectual, artistic and literary life.",
     "primarylanguage": "French",
     "languagecode": "fr",
     
