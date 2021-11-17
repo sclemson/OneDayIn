@@ -8,9 +8,11 @@ const FormInput = ({
   errorInfo,
   handleFormChange
 }) => {
+
+
   return (
     <div className='field'>
-      <label htmlFor={name}>{name}</label>
+      {/* <label htmlFor={name}>{name}</label> */}
       <input
         placeholder={placeholder}
         type={type}

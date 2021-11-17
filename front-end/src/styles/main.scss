@@ -1,16 +1,18 @@
 @import "colours";
+@import "fonts";
 @import "header";
 @import "singlecity";
 @import "cities";
 @import "userRecommendationPage";
 @import "recommendationForm";
 @import "login-register";
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "profile";
 @import "user";
 @import "about";
 @import "home";
 @import "footer";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
   box-sizing: border-box;

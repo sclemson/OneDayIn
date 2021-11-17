@@ -9,7 +9,7 @@ const CityCard = ({
 }) => {
   return (
     <Link to={`/cities/${_id}`}>
-      <div className='city-card' style={{ backgroundImage: `url(${thumbnailImage})` }}>
+      <div className='city-card' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(${thumbnailImage})` }}>
         <h2>
           {name} 
         </h2>

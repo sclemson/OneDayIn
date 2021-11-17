@@ -44,7 +44,11 @@ const CityInformation = ({
       </div>
       <div className='info-section'>
         <p>{overview}</p>
-        <p>Stuck for something to say? <a href={`https://www.duolingo.com/dictionary/${languagecode}`} target='_blank' rel='noreferrer'>Try this</a></p>
+        {languagecode === 'en' ?
+          <></>
+          :
+          <p>Stuck for something to say? <a href={`https://www.duolingo.com/dictionary/${languagecode}`} target='_blank' rel='noreferrer'>Try this</a></p>
+        }
       </div>
       <div className='hotspot-section'>
         <div className='hotspot-row'>

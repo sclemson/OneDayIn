@@ -1,21 +1,26 @@
 .header {
   background-color: white;
-  height: 100px;
+  height: 80px;
+  border-bottom: 3px solid $tufts-blue;
+  width: 880px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
 
   .compass {
-    height: 256px;
-    width: 300px;
     position: absolute;
-    top: -77px;
-    left: 320px;
+    height: 100px;
+    width: 375px;
+    top: -35px;
+    left: 250px;
   }
 
   .needle {
-    height: 256px;
-    width: 300px;
+    height: 60px;
+    width: 60px;
     position: absolute;
-    top: -77px;
-    left: 243px;
+    top: -15px;
+    left: 270px;
     animation: spin 10s linear infinite;
     transform-origin: center;
   }
@@ -66,35 +71,59 @@
   margin-top: 50px;
 }
 
-nav {
-  background-color: white;
+.offcanvas-backdrop {
+  background-color: $alice-blue;
+}
 
-  h2 {
-    margin-top: 50px;
+.offcanvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo-div {
+    width: 80%;
+  }
+
+  .logo {
+    margin-top: 70px;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 20px;
   }
 
   ul {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    border-top: 3px solid $tufts-blue;
+    width: 80%;
+    padding-left: 0;
+    padding-top: 10px;
 
     li {
-      padding: 10px;
       list-style: none;
+      margin: 10px 0;
     }
 
     a {
       text-decoration: none;
+      color: $tufts-blue;
+      font-family: $montserat;
+      font-size: 18px;
+    }
+
+    a:hover {
       color: $cobalt-blue;
-      font-size: 16px;
     }
 
     button {
-      background-color: $cobalt-blue;
+      background-color: white;
       border: none;
-      color: white;
-      font-size: 14px;
+      color: $tufts-blue;
+      font-size: 18px;
+      padding: 0;
+      font-family: $montserat;
+    }
+
+    button:hover {
+      color: $cobalt-blue;
     }
   }
 }

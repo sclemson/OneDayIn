@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Nav from './components/Nav'
-// import Example from './components/Hamburger'
 import Header from './components/Header'
 import { getToken } from './helpers/auth'
 import About from './pages/About'
@@ -15,12 +14,10 @@ import Register from './pages/Register'
 import Profile from './pages/Profile'
 import AddRecommendation from './pages/AddRecommendation'
 import { UserRecommendations } from './pages/UserRecommendations'
-<<<<<<< HEAD
 import OtherProfiles from './pages/OtherProfiles'
 import EditRecommendation from './pages/EditRecommendation'
-=======
 import Footer from './components/Footer'
->>>>>>> development
+import AllCitiesList from './pages/AllCitiesList'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -39,8 +36,6 @@ function App() {
   return (
     <Router>
       <header className='App-header'>
-        {/* <Example isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}  
-          user={user} setUser={setUser}/> */}
         <Nav isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}  
           user={user} setUser={setUser}/>
         <Header />
@@ -52,15 +47,12 @@ function App() {
               Each of our routes has two props: a 'path' to match,
               and a 'component' to render when we do.
             */}
-<<<<<<< HEAD
           <Route path='/cities/:id/recommendations/edit/:recId' component={EditRecommendation} />
-=======
-            
->>>>>>> development
           <Route path='/cities/:id/recommendations/:type' component={UserRecommendations} />
           <Route path='/cities/:id/recommendations' component={AddRecommendation} />
           <Route path='/cities/:id' component={SingleCity} />
-          <Route path='/cities' component={CitiesList} />
+          <Route path='/cities' component={AllCitiesList} />
+          <Route path='/filteredcities' component={CitiesList} />
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route

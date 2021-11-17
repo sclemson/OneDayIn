@@ -50,9 +50,9 @@ const Register = () => {
   return (
     <section className="login">
       <form onSubmit={handleSubmit}>
-        <h1>Register with One Day In...</h1>
+        <h1>Register</h1>
         <FormInput
-          placeholder='traveller'
+          placeholder='username'
           type='text'
           name='username'
           {...formInputProps}
@@ -75,7 +75,7 @@ const Register = () => {
           name='passwordConfirmation'
           {...formInputProps}
         />
-        <div>
+        <div className='submit-section'>
           <input type='submit' value='Register' />
         </div>
         {isError ? (

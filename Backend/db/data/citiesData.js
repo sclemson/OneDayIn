@@ -1,7 +1,7 @@
 export default [ {
     "name": "London",
     "country": "England",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "London is famous for more than its magnificent ancient buildings, the Palace of Westminster, Trafalgar Square, Tower of London, London Eye, Art Galleries, and Big Ben. ... When you walk around London, you see many things from the early history of the world that evokes both curiosity and excitement.",
     "primarylanguage": "English",
     "languagecode": "en",
@@ -41,7 +41,7 @@ export default [ {
 {
     "name": "Paris",
     "country": "France",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "Paris is monumental, both due to its size but also its wealth of architectural heritage. Long considered the paragon of style, Paris is perhaps the most glamorous and cosmopolitan city in Europe. The city’s reputation as a magnet for writers, artists and dissidents lives on, and it remains at the forefront of Western intellectual, artistic and literary life.",
     "primarylanguage": "French",
     "languagecode": "fr",
@@ -80,7 +80,7 @@ export default [ {
 {
     "name": "Rome",
     "country": "Italy",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "Rome is called the Eternal City because you would need an eternity to do it justice. From mythic beginnings, through empires and regimes Rome is, in many ways, several cities in one - an ancient colossus, Rome excels at the old, but it can also welcome the new.",
     "primarylanguage": "Italian",
     "languagecode": "it",
@@ -111,7 +111,7 @@ export default [ {
 {
     "name": "Barcelona",
     "country": "Spain",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "Few European cities can offer you the wide diversity of cultural experience that you'll find here in Barcelona. Couple that with the luxury of 4.2 km of beach only a short walk from the city centre, warm sunshine most of the year, you have all the makings of a complete holiday in Spain.",
     "primarylanguage": "Spanish",
     "languagecode": "es",
@@ -142,7 +142,7 @@ export default [ {
 {
     "name": "Berlin",
     "country": "Germany",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "Berlin, the capital city of Germany, is renowned for its exceptional range of landmarks, vibrant cultural scene and way of life that's somehow all go yet relaxed.",
     "primarylanguage": "German",
     "languagecode": "de",
@@ -172,7 +172,7 @@ export default [ {
 {
     "name": "Helsinki",
     "country": "Finland",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "In many ways Helsinki is one of Europe's undiscovered gems. A city of quirky functionalist and futuristic design, fantastic food, and languid Baltic light.",
     "primarylanguage": "Finnish",
     "languagecode": "fi",
@@ -203,7 +203,7 @@ export default [ {
 {
     "name": "Gdansk",
     "country": "Poland",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "Gdansk captured many an outsider's imagination with the shipyard Solidarity movement that brought down Polish communism in the 1980s. The city is a fascinating combination of brutal industrialism and 16th century charm, all on the beautiful Baltic coast.",
     "primarylanguage": "Polish",
     "languagecode": "polish",
@@ -234,7 +234,7 @@ export default [ {
 {
     "name": "Milan",
     "country": "Italy",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "The northern powerhouse of Italy, Milan is by turns a cosmopolitan capital and a historic hub. The true strength of Milan is the city's refusal to rely solely on the treasures within it, comibining these with its own vision of Italy's future.",
     "primarylanguage": "Italian",
     "languagecode": "it",
@@ -265,7 +265,7 @@ export default [ {
 {
     "name": "Madrid",
     "country": "Spain",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "With dazzling light and bright blue skies for much of the year, Madrid would be an energising city even without the world-class museums and the buzzing nightlife. The centre is smartening itself up, too, with new boutiques, delis, cafés and gastrobars opening every week, but it is the traditional tapas bars and tiny shops that are the real soul of the city.",
     "primarylanguage": "Spanish",
     "languagecode": "es",
@@ -304,7 +304,7 @@ export default [ {
 {
     "name": 'Budapest',
     "country": "Hungary",
-    "continent": "Europe",
+    "continent": "eu",
     "overview": "Architecturally, the city is a treasure trove, with enough baroque, neoclassical, Eclectic and art nouveau buildings to satisfy everyone. The city has a fin de siècle feel to it, for it was then, during the capital’s ‘golden age' in the late 19th century, that most of what you see today was built.",
     "primarylanguage": "Hungarian",
     "languagecode": "hu",
@@ -334,7 +334,7 @@ export default [ {
 {
     "name": "Buenos Aires",
     "country": "Argentina",
-    "continent": "South America",
+    "continent": "sa",
     "overview": "Of all South America’s capital cities, Buenos Aires has the most going for it. Seductive and cultured, sophisticated yet earthy, eclectic but with a strong identity, it never bores, seldom sleeps and invariably mesmerises its visitors. Influenced by the great European cities, Buenos Aires nonetheless has its own distinct personality enhanced by proud traditions, including football, tango and mate. Travellers who visit Buenos Aires will very quickly experience the modern and traditional charms of Argentina's capital city.",
     "primarylanguage": "Spanish",
     "languagecode": "es",
@@ -364,7 +364,7 @@ export default [ {
 {
     "name": "Rio de Janeiro",
     "country": "Brazil",
-    "continent": "South America",
+    "continent": "sa",
     "overview": "The citizens of the fourteen-million-strong city of Rio de Janeiro call it the Cidade Marvilhosa – and there can’t be much argument about that. It’s a setting enhanced annually by the frenetic sensuality of Carnaval, an explosive celebration that – for many people – sums up Rio and its citizens, the cariocas.",
     "primarylanguage": "Portugese",
     "languagecode": "pt",

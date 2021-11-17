@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import WorldMap from 'react-world-map'
+import { setContinent } from '../helpers/auth'
+import { useHistory } from 'react-router'
+
+
 
 const Home = () => {
+  const [selected, onSelect] = useState(null)
+  const history = useHistory()
+
+  useEffect(() => {
+    if (selected === null) return
+    console.log(selected)
+    setContinent(selected)
+    history.push('/filteredcities')
+  }, [selected])
+
   return (
-    <section>
-      <div className='home-page'>
-        <h2>Welcome to One Day In...</h2>
-        <p>A one stop destination to find what to do when you find yourself with time to kill in a city</p>
+    <>
+      <div className="home-page">
+        <h2>Where would you like to spend one day?</h2>
+        <WorldMap selected={ selected } onSelect={ onSelect } />
       </div>
-    </section>
+    </>
   )
 }
   
+
 export default Home

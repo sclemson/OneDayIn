@@ -2,19 +2,17 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import CityCard from '../components/CityCard'
 import { getCities } from '../helpers/api'
-import { getContinent } from '../helpers/auth'
 
-const CitiesList = () => {
+
+const AllCitiesList = () => {
   const [cities, setCities] = useState([])
 
 
   useEffect(() => {
     const getCityData = async () => {
-      const continent = getContinent()
       const allCities = await getCities()
-      const filteredCities = allCities.filter(city => city.continent === continent)
-      filteredCities.sort((a,b) => (a.name > b.name ? 1 : -1))
-      setCities(filteredCities)
+      allCities.sort((a,b) => (a.name > b.name ? 1 : -1))
+      setCities(allCities)
     } 
     getCityData()
   }, [])
@@ -37,4 +35,4 @@ const CitiesList = () => {
   )
 }
 
-export default CitiesList
+export default AllCitiesList

@@ -1,6 +1,6 @@
 import React from 'react'
-import compass from '../assets/ODI_Logo_NC.png'
-import needle from '../assets/Compass_Centre.png'
+import compass from '../assets/ODI_Final_logo_no_needle.png'
+import needle from '../assets/Compass_Final.png'
 
 const Header = () => {
   return (

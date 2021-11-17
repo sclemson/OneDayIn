@@ -21,3 +21,15 @@ export const setUserId = (userId) => {
 export const removeUserId = () => {
   window.localStorage.removeItem('userId')
 }
+
+export const getContinent = () => {
+  return window.localStorage.getItem('continent')
+}
+
+export const setContinent = (continent) => {
+  window.localStorage.setItem('continent', continent)
+}
+
+export const removeContinent = () => {
+  window.localStorage.removeItem('continent')
+}

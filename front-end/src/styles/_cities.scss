@@ -1,9 +1,14 @@
 .city-list {
+  display: flex;
+  justify-content: center;
+
   ul {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 0;
-    background-color: $tufts-blue;
+    padding: 0;
+    max-width: 1070px;
 
     li {
       list-style: none;
@@ -26,22 +31,24 @@
   align-items: center;
   justify-content: center;
   background-size: cover;
-  border: 3px solid white;
-  border-radius: 20px;
+  border-radius: 10px;
 
   h2 {
     margin: 0;
+    font-family: $montserat;
+    text-align: center;
   }
 
   h3 {
     margin: 0;
     color: white;
     text-shadow: 1px 1px 10px black;
+    font-family: $bebas-neue;
   }
 }
 
 .city-card:hover {
-  box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   top: -10px;
 }

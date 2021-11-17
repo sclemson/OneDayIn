@@ -4,6 +4,7 @@ import { Link, useHistory } from 'react-router-dom'
 import { removeToken, removeUserId, getUserId } from '../helpers/auth'
 import { Squash as Hamburger } from 'hamburger-react'
 import { Offcanvas } from 'react-bootstrap'
+import logo from '../assets/ODI_Logo_Final.png'
 
 const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
   const history = useHistory()
@@ -25,18 +26,14 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
       scroll: false,
       backdrop: true
     }
-    // {
-    //   name: 'Enable backdrop (default)',
-    //   scroll: true,
-    //   backdrop: false
-    // }
+
   ]
 
   return (
     <nav>
-      <Hamburger toggled={show} toggle={setShow} { ...options } />
+      <Hamburger color='#2196F3' toggled={show} toggle={setShow} { ...options } />
       <Offcanvas show={show}>
-        <h2 className='navHeader'>One Day In...</h2>
+        <div className='logo-div'><img src={logo} className ='logo' alt="One Day In logo"/></div>
         <ul>
           <li>
             <Link onClick={handleClose} to='/'>Home</Link>

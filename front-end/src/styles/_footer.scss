@@ -1,39 +1,50 @@
 .footer {
   display: flex;
-  flex-direction: column;
-  height: auto;
+  justify-content: center;
   width: 100%;
-  border: 1px solid black;
 }
-.footer .footer-top {
-  justify-content: flex-end;
-  flex-direction: row;
 
-  .a {
-    position: absolute;
-    right: 0;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  border-top: 3px solid $tufts-blue;
+  position: relative;
+  color: $tufts-blue;
+  font-family: $montserat;
+
+  div {
+    display: flex;
+
+    .top {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      text-decoration: none;
+      color: $tufts-blue;
+    }
+
+    .social-info {
+      padding-right: 20px;
+      p {
+        margin: 0;
+        padding-right: 5px;
+      }
+
+      i {
+        padding-right: 5px;
+        color: $light-sky-blue;
+      }
+
+      i:hover {
+        color: $tufts-blue;
+      }
+    }
   }
-}
-.footer-middle {
-  display: flex;
-}
-.profile {
-  display: flex;
-  flex-direction: row;
-}
-.footer-bottom {
-  align-content: right;
-}
-.i {
-  padding: 5px;
-  margin: 5px;
-}
-.profile {
-  display: flex;
-}
-.fab {
-  padding: 5px;
-}
-.fab:hover {
-  transform: scale(2);
+
+  .rights {
+    color: $tufts-blue;
+    margin: 0;
+  }
 }

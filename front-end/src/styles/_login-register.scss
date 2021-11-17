@@ -1,17 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-$login-color: #E3F2FD;
- 
-.login{
-  font-family: quicksand;
-  background-color: $login-color;
-  height: 500px;
-  width: 400px;
-  align-content: center;
-  position: absolute;
-  left: 35%;
-  top: 20%;
-  
-  
+.login {
+  font-family: $montserat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  h1 {
+    color: $tufts-blue;
+    margin-bottom: 15px;
+  }
 
+  .field {
+    margin-bottom: 5px;
+
+    input {
+      border: solid 1px $light-sky-blue;
+      color: $tufts-blue;
+    }
+  }
+
+  .submit-section {
+    input {
+      margin: 10px 0;
+      background-color: $tufts-blue;
+      font-family: $montserat;
+      border: 1px solid $light-sky-blue;
+      color: $alice-blue;
+      padding: 1px 5px;
+    }
+  }
+
+  .signup {
+    font-family: $montserat;
+    color: $tufts-blue;
+
+    a {
+      text-decoration: none;
+      color: $light-sky-blue;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }

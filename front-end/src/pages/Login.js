@@ -26,11 +26,7 @@ const Login = ({ setIsLoggedIn }) => {
     setIsLoggedIn(true)
     setIsError(false)
     // And finally, redirect the user
-<<<<<<< HEAD
     history.push('/cities')
-=======
-    history.push('cities')
->>>>>>> development
   }
   const handleError = (error) => {
     if (error.response) {
@@ -49,7 +45,7 @@ const Login = ({ setIsLoggedIn }) => {
   return (
     <section className="login">
       <form onSubmit={handleSubmit}>
-        <h1>Sign in to One Day In...</h1>
+        <h1>Sign In</h1>
         <FormInput
           placeholder='username'
           type='username'
@@ -59,24 +55,22 @@ const Login = ({ setIsLoggedIn }) => {
         <FormInput
           placeholder='password'
           type='password'
-          name='password'
+          name='Password'
           {...formInputProps}
         />
-        <div>
+        <div className='submit-section'>
           <input type='submit' value='Login' />
         </div>
         {isError ? (
           <div className='error'>
-            <p>Error. Please try again.</p>
+            <p>There appears to have been an error. Please try again.</p>
           </div>
         ) : (
           <></>
         )}
       </form>
-      <div>
-        
-         
-        <p>Not a Member? <Link to='/register'>Register Here</Link>   
+      <div className='signup'>
+        <p> Not a Member? <Link to='/register'>Sign up here</Link>   
         </p>     
       </div>
     </section>
