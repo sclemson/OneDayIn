@@ -165,9 +165,9 @@ const RecommendationCard = ({ cityId, _id, owner, title, location, text, price, 
         </div>
         <div className='bottom-row'>
           { !averageRating ?
-            <h6>Recommendation Rating: Not Rated Yet</h6>
+            <h6>Average Rating: Not Rated Yet</h6>
             :
-            <h6>Recommendation Rating: {averageRating}</h6>
+            <h6>Average Rating: {averageRating}</h6>
           }
           {isLoggedIn ?
             !userHasRated ?

@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  margin-bottom: 90px;
+  font-family: $montserat;
 
   .top-section {
     height: 300px;
@@ -15,45 +17,60 @@
     text-shadow: 1px 1px 10px black;
     width: 800px;
     background-size: cover;
+    border-radius: 10px;
 
     h2 {
       margin: 0;
-      font-size: 40px;
+      font-size: 50px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
     }
 
     h3 {
       margin: 0;
-      font-size: 30px;
+      font-size: 40px;
+      font-family: $bebas-neue;
     }
   }
 
   .recommendation-form {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
+    font-size: 14px;
 
     form {
       margin-top: 30px;
-      width: 400px;
+      width: 310px;
       display: flex;
       flex-direction: column;
-      background-color: $tufts-blue;
+      align-items: flex-start;
       border-radius: 15px;
 
+      h3 {
+        color: $tufts-blue;
+        font-size: 26px;
+      }
+
       .form-field {
-        padding: 10px;
+        padding: 3px 0;
         display: flex;
         justify-content: center;
 
         input {
           color: $tufts-blue;
+          width: 300px;
         }
 
         .select-type {
           color: $tufts-blue;
-          background-color: white;
-          border: none;
+          background-color: transparent;
+          border: 1px solid $light-sky-blue;
           padding: 3px 2px;
-          border-radius: 10px;
+          border-radius: 2px;
         }
 
         .text-area {
@@ -67,6 +84,8 @@
     .radio {
       display: flex;
       justify-content: center;
+      width: 100%;
+      margin: 5px 0;
 
       div {
         display: flex;
@@ -75,16 +94,17 @@
       }
 
       i {
-        color: white;
+        color: $blue-jeans-2;
       }
     }
 
-    .submit {
-      color: $tufts-blue;
-      background-color: white;
-      padding: 5px 10px;
-      border: none;
-      border-radius: 15px;
+    #submit {
+      background-color: $tufts-blue;
+      border: 1px solid $light-sky-blue;
+      color: $alice-blue;
+      padding: 1px 5px;
+      margin-top: 10px;
+      font-size: 14px;
     }
 
     .submit:hover {
@@ -95,5 +115,7 @@
   .error {
     color: $tufts-blue;
     margin-bottom: 10px;
+    width: 310px;
+    font-size: 14px;
   }
 }

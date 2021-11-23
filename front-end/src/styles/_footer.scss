@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  padding-bottom: 5px;
 }
 
 .footer-content {
@@ -46,5 +50,33 @@
   .rights {
     color: $tufts-blue;
     margin: 0;
+  }
+
+  .bottom-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        color: $tufts-blue;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: $cobalt-blue;
+      }
+
+      i {
+        margin-right: 10px;
+      }
+    }
   }
 }

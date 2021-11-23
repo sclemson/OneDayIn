@@ -29,7 +29,7 @@ export const addARecommendation = async (req, res) => {
       const { id } = req.params // get the id of the city
       const city = await City.findById(id)
       if (!city) throw new Error()
-      const newRecommendation = { ...req.body, owner: req.currentUser._id, city: id }
+      const newRecommendation = { ...req.body, owner: req.currentUser._id, city: id, cityname: city.name }
       city.recommendations.push(newRecommendation)
       req.currentUser.recommendations.push(newRecommendation)
       await city.save({ validateModifiedOnly: true })
@@ -73,7 +73,7 @@ export const editRecommendation = async (req, res) => {
     const user = req.currentUser
     const newUserRecommendations = user.recommendations.filter(rec => (rec.title !== recommendationToEdit.title && rec.location !== recommendationToEdit.location))
     user.recommendations = newUserRecommendations
-    const editedRecommendation = {...recommendationToEdit, ...req.body}
+    const editedRecommendation = {...recommendationToEdit, ...req.body, cityname: city.name}
     user.recommendations.push(editedRecommendation)
     await user.save({ validateModifiedOnly: true })
     return res.status(200).json(city)
@@ -111,8 +111,8 @@ export const DeleteRecommendation = async (req, res) => {
 export const addARating = async (req, res) => {
   try {
     const { id, recommendationId } = req.params
-    console.log(recommendationId)
     const city = await City.findById(id)
+    const user= req.currentUser
     if (!city) throw new Error()
     console.log('City found')
     const recommendation = city.recommendations.id(recommendationId)

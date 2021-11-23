@@ -4,6 +4,7 @@
   align-items: center;
   margin-top: 30px;
   color: $tufts-blue;
+  font-family: $montserat;
 
   .top-section {
     height: 300px;
@@ -16,15 +17,18 @@
     text-shadow: 1px 1px 10px black;
     width: 800px;
     background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
 
     h2 {
       margin: 0;
-      font-size: 40px;
+      font-size: 50px;
     }
 
     h3 {
       margin: 0;
-      font-size: 30px;
+      font-size: 40px;
+      font-family: $bebas-neue;
     }
   }
 
@@ -37,10 +41,38 @@
     width: 800px;
     text-align: center;
 
-    h4,
-    p {
-      width: 80%;
-      padding: 0 10px;
+    .overview {
+      width: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+
+      p {
+        width: 90%;
+        margin: 0;
+        color: $bright-navy-blue;
+        font-size: 16px;
+        padding: 5px 0;
+      }
+    }
+
+    .language {
+      color: $tufts-blue;
+
+      p {
+        font-size: 14px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $tufts-blue;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -67,6 +99,7 @@
 
       i {
         font-size: 35px;
+        color: $blue-jeans-2;
       }
     }
 
@@ -80,10 +113,11 @@
 
       .suggestion {
         border-radius: 10px;
-        background-color: $tufts-blue;
+        border: 1px solid $light-sky-blue;
+        background: #e3f2fd68;
         width: 32%;
         height: 90%;
-        color: white;
+        color: $tufts-blue;
 
         .top-row {
           display: flex;
@@ -102,7 +136,7 @@
           flex-direction: column;
           align-items: center;
           position: relative;
-          top: -3px;
+          top: -5px;
 
           h6 {
             margin: 0;
@@ -120,7 +154,9 @@
 
       .suggestion-no-coins {
         border-radius: 10px;
-        background-color: $tufts-blue;
+        border: 1px solid $light-sky-blue;
+        background-color: #e3f2fd68;
+        color: $tufts-blue;
         width: 32%;
         height: 90%;
         display: flex;
@@ -139,13 +175,11 @@
             font-size: 15px;
             text-align: center;
             padding: 0px 4px 1px 4px;
-            color: white;
           }
 
           p {
             margin: 0;
             font-size: 12px;
-            color: white;
           }
         }
       }
@@ -156,6 +190,8 @@
     display: flex;
     justify-content: space-between;
     width: 800px;
+    padding-right: 19px;
+    margin-bottom: 20px;
 
     .hotspot {
       width: 48%;
@@ -168,17 +204,22 @@
       .hotspot-icon {
         i {
           font-size: 40px;
+          position: relative;
+          left: -5px;
+          margin-right: 2px;
+          color: $blue-jeans-2;
         }
       }
 
       .hotspot-suggestions-single {
         width: 80%;
         height: 85%;
-        background-color: $tufts-blue;
+        background-color: #e3f2fd68;
+        border: 1px solid $light-sky-blue;
         border-radius: 10px;
         display: flex;
         justify-content: center;
-        color: white;
+        color: $tufts-blue;
 
         .suggestion {
           display: flex;
@@ -204,11 +245,78 @@
   }
 }
 
+.top-rated {
+  width: 800px;
+  border-top: 3px solid $tufts-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+
+  h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .top-suggestion {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 40px;
+      margin-right: 20px;
+      margin-left: 150px;
+      color: $blue-jeans-2;
+    }
+    .top-data {
+      border-radius: 10px;
+      border: 1px solid $light-sky-blue;
+      background: #e3f2fd68;
+      color: $tufts-blue;
+      width: 400px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      a {
+        color: $tufts-blue;
+        text-decoration: none;
+      }
+
+      h6 {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .owner-info {
+        width: 90%;
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .no-rating {
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+}
+
 .user-suggestion-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 800px;
+  margin-bottom: 80px;
 
   .user-suggestion {
     width: 100%;
@@ -243,7 +351,7 @@
 
       i {
         font-size: 30px;
-        color: $tufts-blue;
+        color: $blue-jeans-2;
       }
     }
   }
@@ -257,10 +365,12 @@
 
     h4 {
       margin: 0;
+      font-size: 16px;
 
       a {
         color: $tufts-blue;
         text-decoration: none;
+        font-weight: bold;
       }
 
       a:hover {

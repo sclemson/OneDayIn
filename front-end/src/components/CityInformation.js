@@ -18,7 +18,8 @@ const CityInformation = ({
   see,
   stay,
   walk,
-  secret
+  secret,
+  recommendations
 }) => {
 
   console.log(_id)
@@ -34,20 +35,24 @@ const CityInformation = ({
     }
   }, [])
 
-  
+  const sortedRecommendations = recommendations.sort((a, b) => (a.averageRating > b.averageRating ? -1 : 1))
+  console.log(sortedRecommendations) 
 
+
+
+  
   return (
     <div className='CityInformation'>
-      <div className='top-section' style={{ backgroundImage: `url(${bannerImage})` }}>
+      <div className='top-section' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(${bannerImage})` }}>
         <h2>{name} </h2>
         <h3>{country}</h3>
       </div>
       <div className='info-section'>
-        <p>{overview}</p>
+        <div className="overview"><p>{overview}</p></div>
         {languagecode === 'en' ?
           <></>
           :
-          <p>Stuck for something to say? <a href={`https://www.duolingo.com/dictionary/${languagecode}`} target='_blank' rel='noreferrer'>Try this</a></p>
+          <div className='language'><p>Stuck for something to say? <a href={`https://www.duolingo.com/dictionary/${languagecode}`} target='_blank' rel='noreferrer'>Try this</a></p></div>
         }
       </div>
       <div className='hotspot-section'>
@@ -88,6 +93,38 @@ const CityInformation = ({
             </div>
             <SingleHotspot arr={secret} />
           </div>
+        </div>
+        <div className='top-rated'>
+          <h3>Highest Rated User Recommendation:</h3>
+          {sortedRecommendations.length > 0 ?
+            <div className="top-suggestion">
+              <div className='user-rec-icon'>
+                {sortedRecommendations[0].type === 'eat' ?
+                  <i className="fas fa-utensils"></i>
+                  : sortedRecommendations[0].type === 'drink' ?
+                    <i className="fas fa-glass-cheers"></i>
+                    : sortedRecommendations[0].type === 'stay' ?
+                      <i className="fas fa-bed"></i>
+                      : sortedRecommendations[0].type === 'see' ?
+                        <i className="fas fa-binoculars"></i>
+                        : sortedRecommendations[0].type === 'walk' ?
+                          <i className="fas fa-hiking"></i>
+                          : sortedRecommendations[0].type === 'secret' ?
+                            <i className="fas fa-user-secret"></i>
+                            : <></>
+                }
+              </div>
+              <div className='top-data'>
+                <h6><Link to={`/cities/${_id}/recommendations/${sortedRecommendations[0].type}`}>{sortedRecommendations[0].title}</Link></h6>
+                <p>{sortedRecommendations[0].location}</p>
+                <div className='owner-info'>
+                  <p>Average Rating: {sortedRecommendations[0].averageRating}</p>
+                  <p className='owner'>Submitted by <Link to={`/profiles/${sortedRecommendations[0].owner._id}`}>{sortedRecommendations[0].owner.username}</Link></p>
+                </div>
+              </div>
+            </div>
+            : <p className='no-rating'>This city hasn&apos;t had any user recommendations yet</p>
+          }
         </div>
       </div>
       <div className='user-suggestion-section'>

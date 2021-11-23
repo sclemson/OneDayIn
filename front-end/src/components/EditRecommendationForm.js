@@ -57,7 +57,7 @@ const EditRecommendationForm = ({ cityId, _id, type, title, location, text, pric
     <div className='edit-recommendation'>
       <div className='recommendation-form'>
         <form onSubmit={handleSubmit}>
-          <h3>Edit your recommendation:</h3>
+          <h3>Edit Recommendation</h3>
           <div className='form-field'>
             <select className='select-type' id='type' name='type' onChange={handleChange}>
               <option>-Select Type-</option>
@@ -69,7 +69,7 @@ const EditRecommendationForm = ({ cityId, _id, type, title, location, text, pric
               <option value="secret">Secret</option>
             </select>
           </div>
-          <div className='form-field'><input id='title' name='title' type='text' onChange={handleChange}/></div>
+          <div className='form-field'><input id='title' name='title' placeholder="Name of Recommendation" type='text' onChange={handleChange}/></div>
           <div className='form-field'><input id='location' type='text' name='location' placeholder='Street Name' onChange={handleChange}/></div>
           <div className='form-field'><textarea className='text-area' id='text' name='text' placeholder='Why are you recommending it?' onChange={handleChange}/></div>
           <div className='radio'>
@@ -80,8 +80,8 @@ const EditRecommendationForm = ({ cityId, _id, type, title, location, text, pric
           <div className='form-field'><input id='valueRating' name='valueRating' type='number' min={1} max={5} placeholder='Value Rating' onChange={handleNumberChange}/></div>
           <div className='form-field'><input id='qualityRating' name='qualityRating' type='number' min={1} max={5} placeholder='Quality Rating' onChange={handleNumberChange}/></div>
           
-          <div className= 'form-field'>
-            <input type='submit' className='submit' value='Submit Recommendation' />
+          <div className= 'form-field-submit'>
+            <input type='submit' id='submit' className='submit' value='Submit' />
           </div>
         </form>
       </div>

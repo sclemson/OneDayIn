@@ -47,9 +47,9 @@ const OtherProfiles = () => {
               <p>Location: </p>
               <h3>{user.location}</h3>
             </div>
-            <div className='information-row'>
+            <div className='information-row-bio'>
               <p>Bio:</p>
-              <div className='user-bio'><p>{user.bio}</p></div>
+              <div className='user-bio'><p id="bio">{user.bio}</p></div>
             </div>
             <div className='information-row'>
               <p>Favourite City: </p>

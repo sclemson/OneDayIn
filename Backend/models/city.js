@@ -19,7 +19,8 @@ const recommendationSchema = new mongoose.Schema(
     valueRating: { type: Number, required: true, min: 1, max: 5 },
     qualityRating: { type: Number, required: true, min: 1, max: 5 },
     owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
-    city: {type: String, required: true },
+    city: { type: String, required: true },
+    cityname: { type: String, required: true },
     ratings: [ ratingsSchema ]
   },
   {

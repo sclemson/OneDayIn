@@ -7,15 +7,24 @@
 
   h1 {
     background-color: none;
-    width: 400px;
+    width: 550px;
     border-bottom: 2px solid $tufts-blue;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 20px;
   }
 
   p {
     margin: 0;
     padding-bottom: 15px;
-    text-align: center;
+    text-align: left;
     width: 550px;
+  }
+
+  a {
+    color: $tufts-blue;
+  }
+
+  a:hover {
+    color: $cobalt-blue;
   }
 }

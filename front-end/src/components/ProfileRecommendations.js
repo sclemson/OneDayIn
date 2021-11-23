@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { OneStar, TwoStar, ThreeStar, FourStar, FiveStar } from './Stars'
 
-const ProfileRecommendations = ({ city, type, title, location, text, price, valueRating, qualityRating, averageRating }) => {
+const ProfileRecommendations = ({ city, type, title, cityname, text, price, valueRating, qualityRating }) => {
   
   
+
   return (
     
     <div className='recommendation'>
@@ -12,7 +13,7 @@ const ProfileRecommendations = ({ city, type, title, location, text, price, valu
         <h2><Link to={`/cities/${city}/recommendations/${type}`}>{title}</Link></h2>
       </div>
       <div className='second-row'>
-        <h4>{location}</h4>
+        <h4><Link to={`/cities/${city}`}>{cityname}</Link></h4>
       </div>
       <div className='third-row'>
         {text}
@@ -103,13 +104,6 @@ const ProfileRecommendations = ({ city, type, title, location, text, price, valu
                     </div>
                   </div>
                   : <> </>
-        }
-      </div>
-      <div className='bottom-row'>
-        { !averageRating ?
-          <h6>Recommendation Rating: Not Rated Yet</h6>
-          :
-          <h6>Recommendation Rating: {averageRating}</h6>
         }
       </div>
     </div>

@@ -47,23 +47,23 @@ const ProfileEditForm = ({ username, email, location, bio, favouriteCity }) => {
       <>
         <form className='user-update-info' onSubmit={handleSubmit}>
           <div className='form-field'>
-            <p>Username: {username}</p>
+            <p>Username: <span className='current-info'>{username}</span></p>
             <input type='text' name='username' placeholder='edit username' onChange={handleChange}></input>
           </div>
           <div className='form-field'>
-            <p>Email: {email}</p>
+            <p>Email: <span className='current-info'>{email}</span></p>
             <input type='text' name='email' placeholder='edit email address' onChange={handleChange}></input>
           </div>
           <div className='form-field'>
-            <p>Location: {location}</p>
+            <p>Location: <span className='current-info'>{location}</span></p>
             <input type='text' name='location' placeholder='edit location' onChange={handleChange}></input>
           </div>
           <div className='form-field'>
-            <p>Bio: {bio}</p>
+            <p>Bio: <span className='current-info'>{bio}</span></p>
             <textarea type='text' name='bio' placeholder='edit your bio' onChange={handleChange}></textarea>
           </div>
           <div className='form-field'>
-            <p>Favourite City: {favouriteCity}</p>
+            <p>Favourite City: <span className='current-info'>{favouriteCity}</span></p>
             <input type='text' name='favouriteCity' placeholder='edit your favourite city' onChange={handleChange}></input>
           </div>
           <div className='submit-section'>

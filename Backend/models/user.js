@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   recommendations: [],
   location: { type: String },
-  bio: { type: String, maxlength: 300 },
+  bio: { type: String, maxlength: 200 },
   favouriteCity: { type: String }
   // number of contributions //
 })

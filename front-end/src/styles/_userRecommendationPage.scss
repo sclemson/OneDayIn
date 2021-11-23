@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  font-family: $montserat;
+  margin-bottom: 90px;
 
   .top-section {
     height: 300px;
@@ -15,21 +17,29 @@
     text-shadow: 1px 1px 10px black;
     width: 800px;
     background-size: cover;
+    border-radius: 10px;
 
     h2 {
       margin: 0;
-      font-size: 40px;
+      font-size: 50px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
     }
 
     h3 {
       margin: 0;
-      font-size: 30px;
+      font-size: 40px;
+      font-family: $bebas-neue;
     }
   }
 
   .type-section {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 20px;
     padding-bottom: 5px;
@@ -42,6 +52,11 @@
       margin: 0;
       padding-left: 10px;
     }
+
+    i {
+      font-size: 25px;
+      color: $blue-jeans-2;
+    }
   }
 
   .radio {
@@ -49,10 +64,11 @@
   }
 
   .user-recommendations {
-    color: white;
+    color: $tufts-blue;
 
     ul {
       padding: 0;
+      margin-bottom: 30px;
 
       li {
         list-style: none;
@@ -63,12 +79,13 @@
           border-radius: 10px;
           padding-left: 10px;
           padding-right: 10px;
-          background-color: $tufts-blue;
+          background-color: #e3f2fd68;
+          border: 1px solid $light-sky-blue;
 
           .top-row {
             display: flex;
             justify-content: space-between;
-            border-bottom: 2px solid #0d47a1;
+            border-bottom: 2px solid $light-sky-blue;
 
             .user-options {
               display: flex;
@@ -79,7 +96,7 @@
                 font-size: 14px;
 
                 a {
-                  color: white;
+                  color: $tufts-blue;
                   text-decoration: none;
                 }
 
@@ -89,9 +106,10 @@
               }
 
               button {
-                background-color: $tufts-blue;
+                background-color: transparent;
                 border: none;
-                color: white;
+                color: $tufts-blue;
+                font-size: 14px;
               }
 
               button:hover {
@@ -112,7 +130,7 @@
 
           .third-row {
             width: 100%;
-            background-color: $blue-jeans-2;
+            background-color: #e3f2fdc2;
             border-radius: 5px;
             padding: 10px;
             font-style: italic;
@@ -123,13 +141,14 @@
             display: flex;
             justify-content: space-between;
             padding-bottom: 10px;
-            border-bottom: 2px solid #0d47a1;
+            border-bottom: 2px solid $light-sky-blue;
 
             .user-rec-price,
             .user-rec-quality,
             .user-rec-value {
               display: flex;
               justify-content: center;
+              align-items: center;
               width: 33%;
 
               p {
@@ -154,12 +173,16 @@
 
             h6 {
               margin: 10px 0;
-              color: $cobalt-blue;
+              color: $tufts-blue;
               font-size: 12px;
               padding: 0 10px;
 
               a {
                 text-decoration: none;
+                color: $tufts-blue;
+              }
+
+              a:hover {
                 color: $cobalt-blue;
               }
             }
@@ -173,15 +196,17 @@
               .rating {
                 width: 40px;
                 margin-right: 10px;
-                background-color: $tufts-blue;
+                background-color: transparent;
                 border: none;
-                color: white;
+                color: $tufts-blue;
+                font-size: 12px;
+                border: 1px solid $light-sky-blue;
               }
 
               .submit {
                 color: $tufts-blue;
                 border: none;
-                background-color: white;
+                background-color: transparent;
                 border-radius: 10px;
                 font-size: 12px;
                 padding: 2px 5px;
@@ -202,10 +227,13 @@
 
     h4 {
       margin: 0;
+      color: $tufts-blue;
+      font-size: 20px;
 
       a {
         color: $tufts-blue;
         text-decoration: none;
+        font-weight: bold;
       }
 
       a:hover {

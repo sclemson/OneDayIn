@@ -13,7 +13,10 @@ const Footer = () => {
           <a className='top' onClick={() => ScrollToTop()}>Return to Top</a>
           <FooterContact />
         </div>
-        <p className='rights'>&copy; 2021 All rights reserved</p>
+        <div className='bottom-row'>
+          <div><i className="far fa-envelope"></i><p><a href="mailto:adminteam@onedayin.com">Suggest a City</a></p></div>
+          <p className='rights'>&copy; 2021 All rights reserved</p>
+        </div>
       </div>
     </section>
   )

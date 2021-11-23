@@ -166,7 +166,7 @@ export default [ {
     "walk": [{ "name": "Treptower Park", "location": "Alt-Treptow" }], 
 
     "secret": [ { "name": "Mauerpark Flea Market (on Sundays)", "location": "Gleimviertel" }],
-    "thumbnailImage": "https://i.imgur.com/QorRX94.jpeg",
+    "thumbnailImage": "https://i.imgur.com/q0KlNtT.jpg",
     "bannerImage": "https://i.imgur.com/W6RFyD6.jpeg"
 },
 {
@@ -390,6 +390,607 @@ export default [ {
     "secret": [ { "name": "Selarón Staircase", "location": "Santa Teresa" } ],
     "thumbnailImage": "https://i.imgur.com/L9JUEuO.jpg",
     "bannerImage": "https://i.imgur.com/r6bjCmI.jpg"
+},
+{
+    "name": "New York",
+    "country": "USA",
+    "continent": "na",
+    "overview": "The cultural and financial capital of the USA, if not the world, New York City is an adrenaline-charged, history-laden place that holds immense romantic appeal for visitors. Its past is visible in the tangled lanes of Wall Street and tenements of the Lower East Side; meanwhile, towering skyscrapers serve as monuments of the modern age. Visiting New York should be on every traveller's bucket-list.",
+    "primarylanguage": "English",
+    "languagecode": "en",
+    
+    "eat":  [ { "name": "Bleecker Street Pizza",
+    "location":"7th Ave South" },
+    { "name": "Boucherie West Village",
+    "location": "7th Ave South" },
+    { "name": "Club A Steakhouse",
+    "location": "East 58th Street" } ],
+    
+    "drink": [ { "name": "124 Old Rabbit Club",
+    "location": "MacDougal St" },
+    { "name": "Hellcat Annie's Tap Room",
+    "location": "10th Ave" },
+    { "name": "230 Fifth Rooftop Bar",
+    "location": "5th Ave" }],
+    
+    "see": [{ "name": "Empire State Building",
+    "location": "West 34th St'" }, { "name": "Statue of Liberty", "location": "Liberty Island"},
+    { "name": "One World Observatory", "location": "West St" }],
+    
+    "stay": [ { "name": "Carlton Arms Hotel",
+    "location": "East 25th St" },
+    { "name": "Hotel Boutique at Grand Central",
+    "location": "East 45th St" },
+    { "name": "The Langham",
+    "location": "5th Ave" }],
+    
+    "walk": [{ "name": "Central Park",
+    "location": "59th to 110th St" }],
+    
+    "secret": [{ "name": "The High Bridge", "location": "Harlem River Dr" }],
+    "thumbnailImage": "https://i.imgur.com/F6jbqFe.jpg",
+    "bannerImage": "https://i.imgur.com/PoRRy5q.jpg"
+},
+{
+    "name": "Nairobi",
+    "country": "Kenya",
+    "continent": "af",
+    "overview": "Easily the largest city in East Africa, Nairobi is also the youngest, the most modern, the fastest growing and, at nearly 1700m altitude, the highest. The superlatives could go on forever. “Green City in the Sun”, runs one tour-brochure sobriquet, “City of Flowers” another. Strolling around the malls in Westlands or negotiating Kenyatta Avenue at rush hour, it’s also perhaps easy to forget how quickly you can leave the city and be in the bush.",
+    "primarylanguage": "Swahili",
+    "languagecode": "sw",
+    
+    "eat":  [ { "name": "K'Osewe Ranalo Foods",
+    "location":"Central Business District" },
+    { "name": "CJ's",
+    "location": "Nairobi Central" },
+    { "name": "Mawimbi",
+    "location": "Nairobi Central" } ],
+    
+    "drink": [ { "name": "Mwenda's",
+    "location": "Fanusi" },
+    { "name": "The Alchemist",
+    "location": "Chiromo" },
+    { "name": "Sarabi",
+    "location": "Chiromo" }],
+    
+    "see": [{ "name": "Nairobi National Park",
+    "location": "Nairobi West" }, { "name": "Karen Blixen Museum", "location": "Kuwinda"},
+    { "name": "The Village Market", "location": "Highridge" }],
+    
+    "stay": [ { "name": "Kozi JKIA",
+    "location": "Nairobi West" },
+    { "name": "Zehneria Portico",
+    "location": "Parklands" },
+    { "name": "Sankara Nairobi",
+    "location": "Parklands" }],
+    
+    "walk": [{ "name": "Ngong Hills",
+    "location": "Ngong" }],
+    
+    "secret": [{ "name": "Karura Forest", "location": "Highridge" }],
+    "thumbnailImage": "https://i.imgur.com/lVC3f0E.jpg",
+    "bannerImage": "https://i.imgur.com/8ECWFqe.jpg"
+},
+{
+    "name": "Cairo",
+    "country": "Egypt",
+    "continent": "af",
+    "overview": "Cairo has been the Islamic world’s greatest city since the Mongols sacked Baghdad in 1258. Cairo is vast, the colour of sand and ashes, of diverse worlds and epochs and gross inequities. All is subsumed into an organism that somehow thrives in the terminal ward: medieval slums and Art Deco suburbs, garbage-pickers and marbled malls, donkey carts and limos, piousness and what Desmond Stewart calls “the oaths of men exaggerating in the name of God”. ",
+    "primarylanguage": "Arabic",
+    "languagecode": "ar",
+    
+    "eat":  [ { "name": "Koshary Abou Tarek",
+    "location":"Downtown" },
+    { "name": "Nişantaşi",
+    "location": "Rabaa" },
+    { "name": "Al Khal",
+    "location": "Rabaa" } ],
+    
+    "drink": [ { "name": "Cairo Cellar",
+    "location": "Zamalek" },
+    { "name": "Wire",
+    "location": "Heliopolis" },
+    { "name": "Pier 88",
+    "location": "Zamalek" }],
+    
+    "see": [{ "name": "The Museum of Egyptian Antiquities",
+    "location": "Downtown" }, { "name": "Giza Gyramids", "location": "Giza"},
+    { "name": "Nile Felucca Cruise", "location": "Gezira" }],
+    
+    "stay": [ { "name": "Dahab Hostel",
+    "location": "Downtown" },
+    { "name": "Pyramisa",
+    "location": "Dokki" },
+    { "name": "Fairmont Nile City",
+    "location": "Zamalek" }],
+    
+    "walk": [{ "name": "Coptic Cairo",
+    "location": "Coptic" }],
+    
+    "secret": [{ "name": "Al-Azhar Park", "location": "Al Darrasa" }],
+    "thumbnailImage": "https://i.imgur.com/W9QOHiy.jpg",
+    "bannerImage": "https://i.imgur.com/aEjSwA4.jpg"
+},
+{
+    "name": "Cape Town",
+    "country": "South Africa",
+    "continent": "af",
+    "overview": "Cape Town is one of Africa’s most beautiful, most romantic and most visited cities. Its physical setting is extraordinary, something its pre-colonial Khoikhoi inhabitants acknowledged when they referred to Table Mountain as Hoerikwaggo – the mountain in the sea. Even more extraordinary is that so close to the national park that extends over much of the peninsula, there’s a vibrant metropolis with nightlife to match the city’s wildlife.",
+    "primarylanguage": "English",
+    "languagecode": "en",
+    
+    "eat":  [ { "name": "Pahari",
+    "location":"Salt River" },
+    { "name": "Lelapa Restaurant",
+    "location": "Langa" },
+    { "name": "Chef's Warehouse Beau Constantia",
+    "location": "Constantia" } ],
+    
+    "drink": [ { "name": "Locals Bar",
+    "location": "Gordons Bay" },
+    { "name": "Urban Brewing",
+    "location": "Constantia" },
+    { "name": "The Deck",
+    "location": "Cape Quarter" }],
+    
+    "see": [{ "name": "Table Mountain Aerial Cableway",
+    "location": "Table Mountain" }, { "name": "District Six Museum", "location": "Cape Town Central"},
+    { "name": "Robben Island", "location": "Robben Island" }],
+    
+    "stay": [ { "name": "Long Street Boutique Hotel",
+    "location": "Cape Town Central" },
+    { "name": "The Tree House",
+    "location": "Green Point" },
+    { "name": "Cape Grace",
+    "location": "Cape Town Central" }],
+    
+    "walk": [{ "name": "Lion's Head",
+    "location": "Sea Point" }],
+    
+    "secret": [{ "name": "Bo-kaap", "location": "Bo-kaap" }],
+    "thumbnailImage": "https://i.imgur.com/dKYvD5p.jpg",
+    "bannerImage": "https://i.imgur.com/v5y1d2V.jpg"
+},
+{
+    "name": "Delhi",
+    "country": "India",
+    "continent": "as",
+    "overview": "A buzzing international metropolis, sprawling Delhi is the capital of India, and also functions as the prime hub of wider South Asia. While this may conjure visions of urban chaos, and while those visions may be almost precisely accurate in teeming Paharganj and other older districts, much of the city is low-lying and surprisingly green. Delhi boasts a rich and varied history, and you’ll come across tombs, temples and ruins dating back centuries. The result is a city full of fascinating nooks and crannies that you could happily spend weeks, or even months, exploring.",
+    "primarylanguage": "Hindi",
+    "languagecode": "hi",
+    
+    "eat":  [ { "name": "Kitchen With A Cause",
+    "location":"Wea" },
+    { "name": "Raajsik",
+    "location": "D Block" },
+    { "name": "Tamra",
+    "location": "Windsor Place" } ],
+    
+    "drink": [ { "name": "Dzukou Tribal Kitchen",
+    "location": "Pocket 3" },
+    { "name": "The Pianoman",
+    "location": "Block B6" },
+    { "name": "1911 Bar",
+    "location": "Connaught Place" }],
+    
+    "see": [{ "name": "Qutub Minar",
+    "location": "Sector A" }, { "name": "Chandni Chowk", "location": "Chandni Chowk"},
+    { "name": "Lodhi Garden", "location": "Lodi" }],
+    
+    "stay": [ { "name": "The Grand New Delhi",
+    "location": "Pocket 4" },
+    { "name": "Haveli Dharampura",
+    "location": "Pai Walan" },
+    { "name": "The Lodhi",
+    "location": "Bharti Nagar" }],
+    
+    "walk": [{ "name": "Mughal Garden",
+    "location": "Presidents Estate" }],
+    
+    "secret": [{ "name": "Zafar Mahal", "location": "Mehrauli" }],
+    "thumbnailImage": "https://i.imgur.com/eIeUgzy.jpg",
+    "bannerImage": "https://i.imgur.com/xyOA19M.jpg"
+},
+{
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "continent": "as",
+    "overview": "By turns exotic, squalid, gauche and hip, the high-octane Vietnamese capital of Hanoi provides a full-scale assault on the senses. Its crumbly, lemon-hued colonial architecture is a feast for the eyes; swarms of buzzing motorbikes invade the ear, while the delicate scents and tastes of delicious street food can be found all across a city that – unlike so many of its regional contemporaries – is managing to modernize with a degree of grace.",
+    "primarylanguage": "Vietnamese",
+    "languagecode": "vi",
+    
+    "eat":  [ { "name": "Luk Lak",
+    "location":"Tràng Tiền" },
+    { "name": "Poke Hanoi",
+    "location": "Tràng Tiền" },
+    { "name": "Cloud Nine",
+    "location": "Old Quarter" } ],
+    
+    "drink": [ { "name": "Lều Coffee & Bar",
+    "location": "Old Quarter" },
+    { "name": "Pasteur Street Brewing Co.",
+    "location": "Hoàn Kiếm" },
+    { "name": "Skyline Bar",
+    "location": "Hoàn Kiếm" }],
+    
+    "see": [{ "name": "Lake of the Restored Sword",
+    "location": "Hoàn Kiếm" }, { "name": "Vietnamese Women's Museum", "location": "Hoàn Kiếm"},
+    { "name": "Ho Chi Minh Mausoleum", "location": "Điện Bàn" }],
+    
+    "stay": [ { "name": "Hanoian Central Hotel",
+    "location": "Hoàn Kiếm" },
+    { "name": "Lotte Hotel",
+    "location": "Ba Đình" },
+    { "name": "Aira Boutique Hanoi",
+    "location": "Hoàn Kiếm" }],
+    
+    "walk": [{ "name": "Old Quarter",
+    "location": "Old Quarter" }],
+    
+    "secret": [{ "name": "Hanoi Mosaic Wall", "location": "Hoàn Kiếm" }],
+    "thumbnailImage": "https://i.imgur.com/J5pdqQ2.jpg",
+    "bannerImage": "https://i.imgur.com/Vno0Bhc.jpg"
+},
+{
+    "name": "Beijing",
+    "country": "China",
+    "continent": "as",
+    "overview": "Beijing is a city that almost everyone enjoys. By turns brash, gaudy, elegant, charming, filthy and historic, the Chinese capital of Beijing leaves an indelible impression on each and every traveller who passes through – this city is never, ever, ever dull. For new arrivals, it provides a gentle introduction to the country, and for travellers who’ve been roughing it round rural China, the creature comforts on offer are a delight.",
+    "primarylanguage": "Mandarin",
+    "languagecode": "zh",
+    
+    "eat":  [ { "name": "Mr. Shi's Dumplings",
+    "location":"Houhai" },
+    { "name": "Little Yunnan",
+    "location": "Houhai" },
+    { "name": "King's Joy",
+    "location": "Dongcheng" } ],
+    
+    "drink": [ { "name": "Tun Bar",
+    "location": "Chaoyang" },
+    { "name": "Great Leap",
+    "location": "Dongcheng" },
+    { "name": "Kokomo",
+    "location": "Dongcheng" }],
+    
+    "see": [{ "name": "Forbidden City",
+    "location": "Dongcheng" }, { "name": "Mutianyu Great Wall", "location": "Mutianyu"},
+    { "name": "Tiananmen Square", "location": "Dongcheng" }],
+    
+    "stay": [ { "name": "Beijing Zhejiang Hotel",
+    "location": "Chaoyang" },
+    { "name": "The Orchid Hotel",
+    "location": "Dongcheng" },
+    { "name": "Stey-Wangfujing",
+    "location": "Dongcheng" }],
+    
+    "walk": [{ "name": "Gubei Water Town",
+    "location": "Panlongshan" }],
+    
+    "secret": [{ "name": "Temple of Heaven", "location": "Qianmen" }],
+    "thumbnailImage": "https://i.imgur.com/y0JMSNo.jpg",
+    "bannerImage": "https://i.imgur.com/NGvsr7C.jpg"
+},
+{
+    "name": "San Francisco",
+    "country": "USA",
+    "continent": "na",
+    "overview": "Arguably the most beautiful, and probably the most progressive major city in the USA, San Francisco remains true to itself: an individualistic place whose residents pride themselves on living in a city like few – if any – others in the world. It’s a surprisingly compact and approachable place, where downtown streets rise on impossible gradients to reveal stunning views, and where fog rolls in on a moment’s notice to envelop everything in mist.",
+    "primarylanguage": "English",
+    "languagecode": "en",
+    
+    "eat":  [ { "name": "Mo's Grill",
+    "location":"Grant Ave" },
+    { "name": "Pacific Catch",
+    "location": "Chestnut St" },
+    { "name": "Kokkari Estiatorio",
+    "location": "Jackson St" } ],
+    
+    "drink": [ { "name": "Local Tap",
+    "location": "3rd St" },
+    { "name": "Mikkeller Bar",
+    "location": "Mason St" },
+    { "name": "Charmaine's Rooftop Bar & Lounge",
+    "location": "McAllister St" }],
+    
+    "see": [{ "name": "Golden Gate Bridge",
+    "location": "Lea Bridge Rd'" }, { "name": "Fisherman's Wharf", "location": "North Beach"},
+    { "name": "Alcatraz", "location": "Alcatraz Island" }],
+    
+    "stay": [ { "name": "Grant Plaza Hotel",
+    "location": "Grant Ave" },
+    { "name": "The Marker San Francisco",
+    "location": "Geary St" },
+    { "name": "The Ritz-Carlton",
+    "location": "Stockton St" }],
+    
+    "walk": [{ "name": "Ocean Beach",
+    "location": "Great Highway" }],
+    
+    "secret": [{ "name": "Off the Grid: Fort Mason Center", "location": "Fort Mason Center" }],
+    "thumbnailImage": "https://i.imgur.com/jXaYNju.jpg",
+    "bannerImage": "https://i.imgur.com/gELsU2u.jpg"
+},
+{
+    "name": "Sydney",
+    "country": "Australia",
+    "continent": "oc",
+    "overview": "Sydney, city, capital of the state of New South Wales, Australia. Located on Australia's southeastern coast, Sydney is the country's largest city and, with its magnificent harbour and strategic position, is one of the most important ports in the South Pacific. ",
+    "primarylanguage": "English",
+    "languagecode": "en",
+    
+    "eat":  [ { "name": "Manoosh Pizzeria",
+    "location":"Enmore Rd" },
+    { "name": "Thai Pothong",
+    "location": "King St" },
+    { "name": "Sokyo",
+    "location": "Pyrmont St" } ],
+    
+    "drink": [ { "name": "3 Wise Monkeys",
+    "location": "George St" },
+    { "name": "Fortune of War",
+    "location": "George St" },
+    { "name": "The Argyle",
+    "location": "Argyle St" }],
+    
+    "see": [{ "name": "Three Sisters",
+    "location": "Katoomba" }, { "name": "Bondi Beach", "location": "Bondi Beach, NSW"},
+    { "name": "Sydney Opera House", "location": "Bennelong Point" }],
+    
+    "stay": [ { "name": "Meriton Suites",
+    "location": "Sussex St" },
+    { "name": "The Darling",
+    "location": "Pyrmont St" },
+    { "name": "Park Hyatt Sydney",
+    "location": "Hickson Rd" }],
+    
+    "walk": [{ "name": "Bondi to Coogee Walk",
+    "location": "Bondi Beach Park" }],
+    
+    "secret": [{ "name": "Shipwreck at Homebush Bay", "location": "Homebush Bay" }],
+    "thumbnailImage": "https://i.imgur.com/1bdaHGy.jpg",
+    "bannerImage": "https://i.imgur.com/0FN1Shq.jpg"
+},
+{
+    "name": "Melbourne",
+    "country": "Australia",
+    "continent": "oc",
+    "overview": "Melbourne is Australia’s second-largest city and is often considered one of the world’s most “liveable cities”. While Melbourne may lack a truly stunning natural setting or in-your-face sights, its subtle charms and vibrant culture make it an undeniably pleasant place to live, and to visit too.",
+    "primarylanguage": "English",
+    "languagecode": "en",
+    
+    "eat":  [ { "name": "11 Inch Pizza",
+    "location":"Little Collins St" },
+    { "name": "Easey's",
+    "location": "Easey St" },
+    { "name": "The French Brasserie",
+    "location": "Malthouse Lane" } ],
+    
+    "drink": [ { "name": "Bar Americano",
+    "location": "Presgrave Pl" },
+    { "name": "Gin Palace",
+    "location": "Rusell Place" },
+    { "name": "Chuckle Park",
+    "location": "Little Collins St" }],
+    
+    "see": [{ "name": "Coop's Shot Tower",
+    "location": "Swanston Streets" }, { "name": "Ponyfish Island", "location": "Evans Walker Bridge"},
+    { "name": "Shrine of Remembrance", "location": "Birdwood Ave" }],
+    
+    "stay": [ { "name": "Ink Hotel Southbank",
+    "location": "City Rd" },
+    { "name": "QT Melbourne",
+    "location": "Russell St" },
+    { "name": "Crown Promenade",
+    "location": "Whiteman St" }],
+    
+    "walk": [{ "name": "The Yarra Trial",
+    "location": "Hoddle Bridge" }],
+    
+    "secret": [{ "name": "Night Markets", "location": "Queen Victoria" }],
+    "thumbnailImage": "https://i.imgur.com/C7m2r7c.jpg",
+    "bannerImage": "https://i.imgur.com/1Re965W.jpg"
+},
+{
+    "name": "Brisbane",
+    "country": "Australia",
+    "continent": "oc",
+    "overview": "Brisbane, the capital of Queensland – known as the “Sunshine State” – is a dynamic, cosmopolitan, safe and friendly city, and is often called Australia's most livable city. ... The amazing weather, excellent quality of life and friendly, relaxed people make Brisbane the perfect Australian city in which to live and study.",
+    "primarylanguage": "English",
+    "languagecode": "en",
+    
+    "eat":  [ { "name": "Olive Thyme",
+    "location":"Sandgate Rd" },
+    { "name": "Black Hide Steakhouse",
+    "location": "St Petrie Terrace" },
+    { "name": "Bacchus",
+    "location": "South Bank" } ],
+    
+    "drink": [ { "name": "The Gresham Bar",
+    "location": "Queen St" },
+    { "name": "Super Whatnot",
+    "location": "Burnett Ln" },
+    { "name": "Death and Taxes",
+    "location": "Burnett Ln" }],
+    
+    "see": [{ "name": "Mount Coot Tha",
+    "location": "Coot Tha" }, { "name": "Kangaroo Point", "location": "Kangaroo Point"},
+    { "name": "Wheel of Brisbane", "location": "South Bank" }],
+    
+    "stay": [ { "name": "Hilton Brisbane",
+    "location": "Elizabeth St" },
+    { "name": "Royal Albert",
+    "location": "Albert St" },
+    { "name": "W Brisbane",
+    "location": "North Quay" }],
+    
+    "walk": [{ "name": "Kangaroo Point to South Bank",
+    "location": "Kangaroo Point" }],
+    
+    "secret": [{ "name": "Brisbane Clock Tower", "location": "King George Square" }],
+    "thumbnailImage": "https://i.imgur.com/Y5oLLE2.jpg",
+    "bannerImage": "https://i.imgur.com/0a2oux2.jpg"
+},
+{
+    "name": "Tokyo",
+    "country": "Japan",
+    "continent": "as",
+    "overview": "Visiting Tokyo is not for the faint of heart. A fuel-injected adrenaline rush into a neon-bright future, Tokyo is a mercurial metropolis flashing by in a blur of conflicting images. Obsessed with the latest trends and fashions, the world’s largest city – the heart of which is home to at least eight million people – is also fiercely proud of its heritage. Lively neighbourhood festivals are held virtually every day of the year, and people regularly visit their local shrine or temple and scrupulously observe the passing seasons in manicured gardens.",
+    "primarylanguage": "Japanese",
+    "languagecode": "ja",
+    
+    "eat":  [ { "name": "Sakura Cafe Jimbocho",
+    "location":"Ochanomizu" },
+    { "name": "Gyopao Gyoza",
+    "location": "Roppongi" },
+    { "name": "Kanda",
+    "location": "Akasaka" } ],
+    
+    "drink": [ { "name": "Deathmatch in Hell",
+    "location": "Golden Gai" },
+    { "name": "Mikkeller Tokyor",
+    "location": "Shibuya City" },
+    { "name": "Old Imperial Bar",
+    "location": "Chiyoda City" }],
+    
+    "see": [{ "name": "Yomiuri Land",
+    "location": "Yanokuchi" }, { "name": "Edo-Tokyo Museum", "location": "Sumida"},
+    { "name": "Ginza Market", "location": "Ginza" }],
+    
+    "stay": [ { "name": "Red Planet Tokyo Asakusa",
+    "location": "Taito City" },
+    { "name": "The Edo Sakura",
+    "location": "Taito City" },
+    { "name": "Aman Tokyo",
+    "location": "Chiyoda City" }],
+    
+    "walk": [{ "name": "Shinjuku Gyoen National Garden",
+    "location": "Shinjuku" }],
+    
+    "secret": [{ "name": "Ueno Park", "location": "Asakusa" }],
+    "thumbnailImage": "https://i.imgur.com/zqWAHS9.jpg",
+    "bannerImage": "https://i.imgur.com/bPVoFBz.jpg"
+},
+{
+    "name": "Santiago",
+    "country": "Chile",
+    "continent": "sa",
+    "overview": "Set on a wide plain near the foot of the Andes, Santiago boasts one of the most dazzling backdrops of any capital city on earth. The views onto the cordillera after a rainstorm clears the air are magnificent, especially in winter, when the snow-covered peaks rise behind the city like a giant white rampart against the blue sky.",
+    "primarylanguage": "Spanish",
+    "languagecode": "es",
+    
+    "eat":  [ { "name": "La Cabrera Chile Isidora",
+    "location":"Las Condes" },
+    { "name": "Ramblas Bar Restaurante",
+    "location": "Providencia" },
+    { "name": "Oporto",
+    "location": "Las Condes" } ],
+    
+    "drink": [ { "name": "La Piojera",
+    "location": "Lastarria" },
+    { "name": "BocaNáriz",
+    "location": "Lastarria" },
+    { "name": "Tramonto Bar and Terrace",
+    "location": "Alonso de Córdova" }],
+    
+    "see": [{ "name": "Museo Chileno de Arte Precolombino",
+    "location": "Centro Histórico" }, { "name": "Viña Cousino Macul", "location": "Peñalolén"},
+    { "name": "Cerro Santa Lucia", "location": "Santa Lucia" }],
+    
+    "stay": [ { "name": "Hotel Foresta",
+    "location": "Lastarria" },
+    { "name": "Hotel Magnolia",
+    "location": "Lastarria" },
+    { "name": "Hotel Boutique Castillo Rojo",
+    "location": "Bellavista" }],
+    
+    "walk": [{ "name": "Cerro San Cristobal",
+    "location": "Providencia" }],
+    
+    "secret": [{ "name": "Templo Bahá'í", "location": "Peñalolén" }],
+    "thumbnailImage": "https://i.imgur.com/L5XRnaE.jpg",
+    "bannerImage": "https://i.imgur.com/xeXIxCs.jpg"
+},
+{
+    "name": "Auckland",
+    "country": "New Zealand",
+    "continent": "oc",
+    "overview": "Auckland is New Zealand's most populous city and is a multi-cultural hub of food, music, arts and culture. Also known as Tāmaki Makaurau, Auckland sprawls over volcanic hills and around twin harbours, offering an exhilarating mix of natural wonders and urban adventures.",
+    "primarylanguage": "English",
+    "languagecode": "en",
+    
+    "eat":  [ { "name": "Sri Pinang",
+    "location":"Karangahape Rd" },
+    { "name": "Odettes Eatery",
+    "location": "Wellesley St" },
+    { "name": "The Grill",
+    "location": "Federal St" }
+     ],
+    
+    "drink": [ { "name": "Father's Ted",
+    "location": "Wellesley St" },
+    { "name": "Brew on Quay",
+    "location": "Quay St" },
+    { "name": "Cloey & Punch",
+    "location": "Princess Wharf" }],
+    
+    "see": [{ "name": "Sky Tower",
+    "location": "Victoria St West" }, { "name": "Auckland Zoo", "location": "Motions Rd"},
+    { "name": "Viaduct Lookout", "location": "Princes Wharf" }],
+    
+    "stay": [ { "name": "Auckland City Hotel",
+    "location": "Hobson St" },
+    { "name": "SkyCity Hotel",
+    "location": "Victoria St" },
+    { "name": "Hilton Auckland",
+    "location": "Quay St" }],
+    
+    "walk": [{ "name": "St Johns Bush Walk",
+    "location": "Gowing Drive" }],
+    
+    "secret": [{ "name": "Tinopai", "location": "Kiapara Harbour" }],
+    "thumbnailImage": "https://i.imgur.com/UVlWJuy.jpg",
+    "bannerImage": "https://i.imgur.com/AOI6l0F.jpg"
+},
+{
+    "name": "Toronto",
+    "country": "Canada",
+    "continent": "na",
+    "overview": "Toronto sprawls along the northern shore of Lake Ontario, its pulsating centre encased by a jangle of satellite townships and industrial zones which cover – as the Greater Toronto Area (GTA) – no less than one hundred square kilometres. In recent decades, successive city administrations and a raft of wealthy benefactors have lavished millions of dollars on glitzy architecture, slick museums, an excellent public transport system and the reclamation and development of the lakefront.",
+    "primarylanguage": "English",
+    "languagecode": "en",
+    
+    "eat":  [ { "name": "Fran's Restaurant & Bar",
+    "location":"College St" },
+    { "name": "Moxie's Grill & Bar",
+    "location": "Reading Court" },
+    { "name": "Scaramouche Restaurant",
+    "location": "Benvenuto Pl" } ],
+    
+    "drink": [ { "name": "Bar Hop Brewco",
+    "location": "Peter St" },
+    { "name": "Tallboys Craft Beer House",
+    "location": "Bloor St West" },
+    { "name": "The Rooftop",
+    "location": "Broadview Ave" }],
+    
+    "see": [{ "name": "Niagara Falls Tour",
+    "location": "Bremner Blvd'" }, { "name": "Royal Ontario Museum", "location": "Queens Park"},
+    { "name": "CN Tower", "location": "Bremner Blvd" }],
+    
+    "stay": [ { "name": "The Alexandra Hotel",
+    "location": "Ryerson Ave" },
+    { "name": "King Blue Hotel Toronto",
+    "location": "King St West" },
+    { "name": "Four Seasons Hotel Toronto",
+    "location": "Yorkville Ave" }],
+    
+    "walk": [{ "name": "Ocean Beach",
+    "location": "Great Highway" }],
+    
+    "secret": [{ "name": "Sunnyside Pavilion", "location": "Lake Shore Blvd West" }],
+    "thumbnailImage": "https://i.imgur.com/KOm4YTy.jpg",
+    "bannerImage": "https://i.imgur.com/GpAOwA4.jpg"
 }
 ]
 

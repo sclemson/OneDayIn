@@ -4,12 +4,11 @@ const About = () => {
   return (
     <section>
       <div className='about-page'>
-        <h1>About One Day In...</h1>
-        <p>One Day In... is your handy guide to help you if you find yourself in one of our selected cities for a day.</p>
-        <p>With recommendations of where to eat, drink, stay, see, and walk, there&apos;s plenty of things for you to get up to.</p>
-        <p>Don&apos;t forget to also look up our secret recommendation for each city, something provided by the locals that you won&apos;t find on other tourist sites!</p>
-        <p>And of course feel free to add your own recommendations for each city, as well as look at the recommendations left by other users.</p>
-        <p>One day in is always looking to expand and add more cities to our network. If you&apos;d like to suggest a city for us to add, don&apos;t hesitate to get in touch.</p>
+        <h1>About</h1>
+        <p>If you&apos;ve ever found yourself with limited time in a city and in need of a clear idea how to spend it, One Day In... is your handy guide.</p>
+        <p>Our independent recommendations aim to give you the absolute &apos;musts&apos; in any given city so that you can be sure that you are making the most of your time there.</p>
+        <p>Whilst we love each and every one of our recommendations, One Day In... is your site as well. Got a recommendation for a particular place? Tell us about it! Want us to add a city? <a href="mailto:adminteam@onedayin.com">Let us know</a>. By using One Day In... you are joining a global community of enthusiastic travellers all keen to share their experiences.</p>
+        <p>One Day In... Adventure awaits. Go find it.</p>
       </div>
     </section>
   )

@@ -140,20 +140,6 @@ export const editRating = async (id, recId, ratId, data) => {
   return response.data
 }
 
-
-// export const deleteCity = async (id) => {
-//   const config = {
-//     method: 'delete',
-//     url: `${baseUrl}/cities/${id}`,
-//     headers: {
-//       Authorization: `Bearer ${getToken()}`,
-//     },
-//   }
-
-//   const response = await axios(config)
-//   return response.data
-// }
-
 export const login = async (data) => {
   return makeAxiosRequest('/login', data)
 }

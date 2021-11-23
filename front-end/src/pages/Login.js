@@ -5,28 +5,27 @@ import { setToken, setUserId } from '../helpers/auth'
 import FormInput from '../components/FormInput'
 
 const Login = ({ setIsLoggedIn }) => {
-  // State variables to track user form input
+
   const [data, setData] = useState({
     username: '',
     password: ''
   })
+
   const [errorInfo, setErrorInfo] = useState({})
   const [isError, setIsError] = useState(false)
-  // We need the routing history hook in order to send the user to the next page
+
   const history = useHistory()
+
   const handleSubmit = async (event) => {
     event.preventDefault()
     login(data).then(handleSuccessfulLogin).catch(handleError)
   }
   const handleSuccessfulLogin = ({ token, userId }) => {
-    // We need to store the token for later
     setToken(token)
     setUserId(userId)
-    // Set the App state variable isLoggedIn to true
     setIsLoggedIn(true)
     setIsError(false)
-    // And finally, redirect the user
-    history.push('/cities')
+    history.push('/')
   }
   const handleError = (error) => {
     if (error.response) {
@@ -41,7 +40,10 @@ const Login = ({ setIsLoggedIn }) => {
       [name]: value
     })
   }
+
+
   const formInputProps = { data, errorInfo, handleFormChange }
+
   return (
     <section className="login">
       <form onSubmit={handleSubmit}>
@@ -55,7 +57,7 @@ const Login = ({ setIsLoggedIn }) => {
         <FormInput
           placeholder='password'
           type='password'
-          name='Password'
+          name='password'
           {...formInputProps}
         />
         <div className='submit-section'>

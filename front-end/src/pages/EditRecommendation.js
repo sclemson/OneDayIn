@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import { getCity, getRecommendation } from '../helpers/api'
-import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import EditRecommendationForm from '../components/EditRecommendationForm'
 
 const EditRecommendation = () => {
@@ -27,7 +27,7 @@ const EditRecommendation = () => {
       {recommendation ?
         <div className='recommendation-page'>
           <div className='top-section' style={{ backgroundImage: `url(${city.bannerImage})` }}>
-            <h2>{city.name}</h2>
+            <h2><Link to={`/cities/${city._id}`}>{city.name}</Link></h2>
             <h3>{city.country}</h3>
           </div>
           <EditRecommendationForm {...recommendation} cityId={city._id}/>

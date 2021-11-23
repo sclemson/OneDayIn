@@ -38,8 +38,8 @@ export const UserRecommendations = () => {
     <section>
       {city ?
         <div className='user-rec-page'>
-          <div className='top-section' style={{ backgroundImage: `url(${city.bannerImage})` }}>
-            <h2>{city.name} </h2>
+          <div className='top-section' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(${city.bannerImage})` }}>
+            <h2><Link to={`/cities/${city._id}`}>{city.name}</Link></h2>
             <h3>{city.country}</h3>
           </div>
           <div className='type-section'>
