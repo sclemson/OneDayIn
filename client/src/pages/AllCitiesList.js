@@ -17,11 +17,6 @@ const AllCitiesList = () => {
     getCityData()
   }, [])
 
-  // useEffect(() => {
-  //   getCities().then(setCities)
-  //   console.log(selected)
-  // }, [])
-
   return (
     <section className='city-list'>
       <ul>

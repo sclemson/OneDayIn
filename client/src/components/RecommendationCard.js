@@ -30,7 +30,6 @@ const RecommendationCard = ({ cityId, _id, owner, title, location, text, price, 
 
 
     const checkUserRating = ratings.filter(rating => rating.owner === userId)
-    console.log(checkUserRating)
     if (checkUserRating.length){
       setUserHasRated(true)
       setUserRating(checkUserRating[0].rating)
