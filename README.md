@@ -44,6 +44,28 @@ We were now able to see our data on the site so we continued to focus on the usa
 ## Days 6 - 7
 With our MVP completed, we set about two of our ‘nice-to-have’ goals - the incorporation of the world map on the homepage and the addition of **duolingo** links to each city so that the user could access translation software if they wished. The map  proved relatively simple to incorporate although one of the results was that we now had to create data for even more global cities so that, regardless of the continent a user clicked on, information would appear. This expansion of our database was time consuming but also valuable as it gave our finished product the usefulness that we had envisaged at the start of the creation process. In order to add the translation links we simply added a **primarylanguage** property to our city schema and made this the same as the duolingo web address for that particular language - this allowed us to direct the user to a given page from each different city featured on the app.  Finally, we focussed heavily on styling - ensuring that there was consistency across the site in terms of colours, fonts, motifs, and layout, and working together to make sure that the One Day In… user experience was as intuitive and enjoyable as possible.
 
+## Featured Code
+The city schema for _One Day In…_ was vital to our project and, as such, provides a useful illustration of how we went about designing the user experience.
+
+![City Schema](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/City%20Schema.png)
+
+The above schema, when populated in **citiesData.js** looked like this:
+
+![Cities Data](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/City%20Database.png)
+
+Getting the backend of _One Day In…_  right was crucial to our success in the project. The below (from the **api.js** file) illustrates how we used our base url and **node.js** to access our city data, whilst the second image (also from **api.js**) illustrates the use of a bearer token to authorise one of our put requests.
+
+![Get Request](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Get%20Request.png)
+
+![Put Request](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Put%20Request.png)
+
+**Nav.js** contains the hamburger feature:
+
+![Hamburger](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Hamburger.png)
+
+Finally, this section of **RecommendationForm.js** shows part of the form  that (when logged in) the user can fill out to recommend a particular attraction within a city. This final screenshot complements the first pieces of featured code as, as mentioned throughout, we always envisaged _One Day In…_ as a site that pushed both editorial and user recommendations.
+
+![Recommendation Form](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Recommendation%20Form.png)
 
 
 
