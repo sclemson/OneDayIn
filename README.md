@@ -67,6 +67,15 @@ Finally, this section of **RecommendationForm.js** shows part of the form  that 
 
 ![Recommendation Form](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Recommendation%20Form.png)
 
+## One Day In... - Walkthrough
+
+## Wins and Wishes
+Working on _One Day In…_ was an overwhelmingly positive experience - we had a clear idea of what we wanted to achieve and we were able to execute this well over the course of the week. I am particularly proud of both the look and the functionality of the site - of all the projects I was involved in on the GA course, _One Day In…_ felt like the project that brought together both design elements and capabilities in the most comprehensive way. The addition of features like the map, the animated logo and, of course, the vast expanse of the cities database really meant that the app felt ‘complete’ and something fulfilled its brief really well.
+
+Given more time, we would have liked to build in additional features such as a gallery function for each city and, potentially, the addition of **super user ** functionality which would have allowed a user to create cities in addition to being able to post recommendations. The addition of a ‘mobile view’ would also have been a bonus.  These were very much additional ‘nice-to-have’ goals however and, overall the app works exactly as intended. 
+
+## Key Takeaways
+As mentioned, we were very pleased with the way that _One Day In…_ turned out. As a process, it taught me the importance of setting clear goals, of having real clarity of expectation and instruction, and it gave me further experience of coding in a collaborative environment - a method of working that I really enjoy. 
 
 
 
