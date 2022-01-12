@@ -3,6 +3,8 @@
 ## Project Overview
 _One Day In…_ is a traveller’s companion - advising you of the best things to do with 24 hours in a given global city. The site strikes a balance between editorial advice and user recommendations and gives users the ability to post their own reviews of their favourite haunts, as well as being able to rate existing recommendations on the site. _One Day In..._ was a week-long group project in which I worked with [James Rogers](https://github.com/james92rogers) and [Kesh Gurung](github.com/keshgurung) to create our finished site.
 
+You can access the deployed version of _One Day In..._ [here](https://onedayinjr.herokuapp.com/).
+
 ## The Brief
 - Build a full-stack application by making your own back-end and your own front-end.
 - Use an Express API to serve your data from a Mongo database.
