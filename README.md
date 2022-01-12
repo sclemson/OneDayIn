@@ -68,6 +68,29 @@ Finally, this section of **RecommendationForm.js** shows part of the form  that 
 ![Recommendation Form](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Recommendation%20Form.png)
 
 ## One Day In... - Walkthrough
+### Home Page
+
+![Home Page]()
+
+### Hamburger
+
+![Hamburger Screenshot]()
+
+### All Cities
+
+![All Cities]()
+
+### Gdansk, City Guide
+
+![Gdansk City Guide]()
+
+### Gdansk, User Recommendation Form
+
+![User Recommendation Form]()
+
+### Gdansk, City Guide with User Recommendation
+
+![Gdansk Recommendation Form]()
 
 ## Wins and Wishes
 Working on _One Day In…_ was an overwhelmingly positive experience - we had a clear idea of what we wanted to achieve and we were able to execute this well over the course of the week. I am particularly proud of both the look and the functionality of the site - of all the projects I was involved in on the GA course, _One Day In…_ felt like the project that brought together both design elements and capabilities in the most comprehensive way. The addition of features like the map, the animated logo and, of course, the vast expanse of the cities database really meant that the app felt ‘complete’ and something fulfilled its brief really well.
