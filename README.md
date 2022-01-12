@@ -21,5 +21,30 @@ _One Day In…_ was always conceived as being a genuinely useful app and we unde
 
 ![Trello Board](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Trello%20Board.png)
 
+## Days 2 - 3 
+Once we had our initial wireframes, endpoints and data planned out we worked from our pseudocode and built our backend structure. In the first instance, we did this using **Zoom** and **Live Share** on **VS Code** given that we were all initially working on the same components. As part of this process we designed our user schema and began to utilise this, ensuring that the framework for **CRUD** capability was built into the site. As well as VS Code, this involved us using **Insomnia** to test our endpoints, which initially comprised:
+
+- GET single city.
+- GET all cities.
+- POST recommendation.
+- PUT update a recommendation.
+- DELETE recommendation.
+- POST register.
+- POST login.
+- GET profile.
+
+Initial testing focussed on our get requests as well as our user register and login sections which used a bearer token in order to build a layer of security into the site. Once we had got the endpoints working, we also gathered the data for more cities and entered this into our **citiesData.js** file so that, moving forward, we would be able to display multiple locations once we started on the frontend.
+
+## Day 4
+By this stage in the project, we were beginning to work on different sections so we started Day 4 by creating our own branches on **GitHub**. The start of the day revolved around constructing and testing our router systems and then linking the frontend to our database. By this stage, we had created seed functionality so that we were able to constantly restore our ‘factory settings’ in terms of data. We also worked on the final piece of functionality that we needed to get working in order to realise our MVP - the **RecommendationForm.js** and associated systems. Initially, we focussed on this simply allowing user comments for our testing, with the intention of adding both a ratings system and an average rating calculator at a later point.
+
+## Day 5
+We were now able to see our data on the site so we continued to focus on the usability of _One Day In…_. By this point we had set up a rough **Sass** structure and were able to begin to get ideas on our layout. I added the **hamburger** element as part of **Nav.js** using **React Bootstrap** and began work on the logo whilst James worked on the ratings system and the calculation of average scores for user recommendations, sorting them in an array so that the highest rated recommendation in any given city would appear in **CityInformation.js**.
+
+## Days 6 - 7
+With our MVP completed, we set about two of our ‘nice-to-have’ goals - the incorporation of the world map on the homepage and the addition of **duolingo** links to each city so that the user could access translation software if they wished. The map  proved relatively simple to incorporate although one of the results was that we now had to create data for even more global cities so that, regardless of the continent a user clicked on, information would appear. This expansion of our database was time consuming but also valuable as it gave our finished product the usefulness that we had envisaged at the start of the creation process. In order to add the translation links we simply added a **primarylanguage** property to our city schema and made this the same as the duolingo web address for that particular language - this allowed us to direct the user to a given page from each different city featured on the app.  Finally, we focussed heavily on styling - ensuring that there was consistency across the site in terms of colours, fonts, motifs, and layout, and working together to make sure that the One Day In… user experience was as intuitive and enjoyable as possible.
+
+
+
 
 
