@@ -68,27 +68,33 @@ Finally, this section of **RecommendationForm.js** shows part of the form  that 
 ![Recommendation Form](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Recommendation%20Form.png)
 
 ## One Day In... - Walkthrough
-### Home Page
+### Homepage
+The map on the homepage is animated and continents are highlighted as the cursor moves over them.
 
 ![Home Page](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Home%20Page.png)
 
 ### Hamburger
+The hamburger animates in and out from the corner of the screen.
 
 ![Hamburger Screenshot](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Hamburger%20Screenshot.png)
 
 ### All Cities
+All Cities is an alphabetically sorted list of all of the cities currently featured on _One Day In..._'s database. This view is accessed via the hamburger on the homepage. Selecting a continent on the map on the homepage would result in just the cities from that continent being displayed.
 
 ![All Cities](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/All%20Cities.png)
 
 ### Gdansk, City Guide
+Each city guide features Eat, Drink, Stay, See, Walk, and Secret recommendations.
 
 ![Gdansk City Guide](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Gdansk%20Information.png)
 
 ### Gdansk, User Recommendation Form
+Users can sign in and add their own recommendations...
 
 ![User Recommendation Form](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Recommendation%20Form%20Gdansk.png)
 
 ### Gdansk, City Guide with User Recommendation
+The top rated of these recommendations for any given city is then displayed within the relevant city guide...
 
 ![Gdansk Recommendation Form](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Gdansk%20User%20Recommendation.png)
 
