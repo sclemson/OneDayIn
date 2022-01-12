@@ -19,7 +19,7 @@ It was important for us to design something that gave users a clear idea on our 
 ## Day 1
 _One Day In…_ was always conceived as being a genuinely useful app and we understood from the outset that we would need to focus on functionality and information in order to achieve this. In the first instance, our discussions (and subsequent pseudocode) revolved around getting our city models right - firstly by deciding on the type of information contained in each city, and then subsequently designing the schema that we would use. We used this information to wireframe the city pages and gain a clear idea of how the site would be laid out. Since the project was completed in a group of three we also decided to set up a Trello board to share resources and manage our workload (see below). Finally, we spent some time gathering our ‘dummy’ data - filling out our London schema in the first instance.
 
-![Trello Board]()
+![Trello Board](https://github.com/sclemson/OneDayIn/blob/main/client/src/assets/readme_images/Trello%20Board.png)
 
 
 
