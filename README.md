@@ -5,7 +5,7 @@ _One Day In…_ is a traveller’s companion - advising you of the best things t
 
 **DURATION:** 7 days.
 
-**TECHNOLOGIES USED:** HTML, CSS, JavaScript, React, React Bootstrap, Node.js, MongoDB.
+**TECHNOLOGIES USED:** HTML, CSS/Sass, JavaScript, React, React Bootstrap, Node.js, MongoDB.
 
 **LINK:** You can access the deployed version of _One Day In..._ [here](https://onedayinjr.herokuapp.com/).
 
